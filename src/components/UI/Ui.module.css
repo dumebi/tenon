@@ -1,0 +1,23 @@
+/* button component styling */
+.button {
+    width: 100%;
+    display: flex;
+    padding: 0.5rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: var(--green-background);
+}
+
+.button button {
+    border: none;
+    background-color: transparent;
+    color: var(--light-font-color);
+    font-family: var(--font-family);
+    font-size: var(--small-text-size);
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+    cursor: pointer;
+}
