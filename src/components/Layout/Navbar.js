@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import logo from "../../assets/Logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Button from "../UI/Button";
 
 function Navbar() {
@@ -14,18 +14,18 @@ function Navbar() {
       </div>
       <ul>
         <li>
-          <Link to="/">Services</Link>
+          <NavLink to="/">Services</NavLink>
         </li>
         <li>
-          <Link to="/">About Us</Link>
+          <NavLink to="/">About Us</NavLink>
         </li>
         <li>
-          <Link to="/">Contact Us</Link>
+          <NavLink to="/">Contact Us</NavLink>
         </li>
       </ul>
       <div className={styles.navbar_auth}>
         <div>
-          <Link to="/">Log in</Link>
+          <NavLink to="/">Log in</NavLink>
         </div>
 
         <svg

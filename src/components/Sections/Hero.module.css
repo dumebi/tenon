@@ -103,7 +103,6 @@
     align-content: center;
     flex-direction: column;
     gap: 4.3125rem;
-    margin-bottom: 8rem;
 }
 
 .hero_container_companies h2 {
@@ -137,4 +136,114 @@
     width: 100%;
     object-fit: contain;
     height: auto;
+}
+
+/* body about */
+
+.body {
+    background-color: var(--green-background);
+    color: var(--light-font-color) !important;
+    display: flex;
+    flex-direction: column;
+    padding: 3.75rem 6.25rem;
+}
+
+.body_about {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 50%;
+    gap: 1.9375rem;
+}
+
+.body_about_parent {
+    gap: 1.9375rem;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.body_about div {
+    width: 28.6875em;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.body_about h1 {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
+.body_about div p {
+    color: var(--light-font-color) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.body_about_cards {
+    width: 47em;
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    gap: 1.25rem;
+}
+
+.card {
+    display: flex;
+    background-color: var(--primary-color);
+    width: 21.625em;
+    height: 14.25em;
+}
+
+.card p:nth-child(2) {
+    font-size: var(--medium-text-size);
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
+.card p:nth-child(3) {
+    font-size: var(--medium-text-size);
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
+.body_features {
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    color: var(--dark-font-color) !important;
+    display: flex;
+    padding: 3.75rem 6.25rem;
+}
+
+.body_features .body_features_header h1 {
+    font-size: 3rem;
+    font-style: normal;
+    text-align: center;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
+.body_features_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 855px;
+    text-align: center;
+}
+
+.body_features .body_features_header p {
+    font-size: var(--medium-text-size);
+    font-style: normal;
+    font-weight: var(--light-font-weight);
+    line-height: normal;
 }

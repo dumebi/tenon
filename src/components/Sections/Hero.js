@@ -19,6 +19,7 @@ function Hero() {
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isHidden, setIsHidden] = useState(false);
 
+  // Array of all the images of rusted companies in africa
   const companies = [
     { img: company4 },
     { img: company1 },
@@ -28,6 +29,7 @@ function Hero() {
     { img: company2 },
   ];
 
+  //side effect to change the phrase change in the hero section
   useEffect(() => {
     const interval = setInterval(() => {
       setIsHidden(true);

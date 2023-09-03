@@ -7,7 +7,7 @@
     align-items: center;
     gap: 0.75rem;
     border-radius: 0.5rem;
-    background-color: var(--green-background);
+    background-color: var(--primary-color);
 }
 
 .button button {
@@ -20,4 +20,16 @@
     font-weight: var(--medium-font-weight);
     line-height: normal;
     cursor: pointer;
+}
+
+/* card component styling */
+
+.card {
+    display: flex;
+    padding: 1.875rem 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.875rem;
+    border-radius: 0.9375rem;
+    box-shadow: var(--box-shadow);
 }
