@@ -7,16 +7,19 @@
 }
 
 :root {
+  --primary-20: #ABC5C8;
   --primary-color: #045159;
   --green-background: #02292D;
   --background-color: #FFFFFF;
   --font-family: 'Red Hat Display', sans-serif;
   --dark-font-color: #3E414C;
   --light-font-color: #EDEEF2;
+  --grey-font-color: #9EA2B3;
   --button-text-color: #FFFFFF;
   --box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
   --medium-text-size: 1.125rem;
   --small-text-size: 1rem;
+  --border-default-color: #DCDEE6;
   --light-font-weight: 400;
   --medium-font-weight: 700;
 }

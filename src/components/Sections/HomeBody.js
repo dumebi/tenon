@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Hero.module.css";
 import Card from "../UI/Card";
 import solutionIcon from "../../assets/svg/Solution.svg";
@@ -10,80 +10,104 @@ import freightIcon from "../../assets/svg/Freight.svg";
 import procurementIcon from "../../assets/svg/Product-procurement.svg";
 import haulageIcon from "../../assets/svg/Haulage.svg";
 import warehouseIcon from "../../assets/svg/warehousing.svg";
+import Button from "../UI/Button";
+
+const tenon_about = [
+  {
+    header: "One-Stop Solution",
+    svg: solutionIcon,
+    text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
+  },
+  {
+    header: "Great customer experience",
+    svg: communicationIcon,
+    text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
+  },
+  {
+    header: "Real time reporting",
+    svg: timerIcon,
+    text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
+  },
+  {
+    header: "Global solutions",
+    svg: globalIcon,
+    text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
+  },
+];
+
+const tenon_features = [
+  {
+    header: "Freight forwarding",
+    svg: freightIcon,
+    card_info: {
+      svg: bikeIcon,
+      header: "Logistics",
+      text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
+    },
+    detailedInfo: {
+      header: "Air freight",
+      text: "With a relentless focus on efficiency, reliability,",
+      header_two: "Ocean freight",
+      text_two: "With a relentless focus on efficiency, reliability,",
+    },
+  },
+
+  {
+    header: "Haulage",
+    svg: haulageIcon,
+    card_info: {
+      svg: procurementIcon,
+      header: "Integrated project procurement",
+      text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
+    },
+    detailedInfo: {
+      header: "Barging",
+      text: "With a relentless focus on efficiency, reliability,",
+      header_two: "Trucking",
+      text_two: "With a relentless focus on efficiency, reliability,",
+    },
+  },
+
+  {
+    header: "Haulage",
+    svg: haulageIcon,
+    card_info: {
+      svg: warehouseIcon,
+      header: "Warehousing",
+      text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
+    },
+    detailedInfo: {
+      header: "Barging",
+      text: "With a relentless focus on efficiency, reliability,",
+      header_two: "Trucking",
+      text_two: "With a relentless focus on efficiency, reliability,",
+    },
+  },
+];
+
+const rateOptions = [
+  "MSC",
+  "MSC",
+  "MSC",
+  "MSC",
+  "MSC",
+  "MSC",
+  "MSC",
+  "MSC",
+  "MSC",
+];
 
 function HomeBody() {
-  const tenon_about = [
-    {
-      header: "One-Stop Solution",
-      svg: solutionIcon,
-      text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-    },
-    {
-      header: "Great customer experience",
-      svg: communicationIcon,
-      text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-    },
-    {
-      header: "Real time reporting",
-      svg: timerIcon,
-      text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-    },
-    {
-      header: "Global solutions",
-      svg: globalIcon,
-      text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-    },
-  ];
+  const [activeShippingRate, setActiveShippingRate] = useState("container");
+  const [activeOptionRate, setActiveOptionRate] = useState(0);
 
-  const tenon_features = [
-    {
-      header: "Freight forwarding",
-      svg: freightIcon,
-      card_info: {
-        svg: bikeIcon,
-        header: "Logistics",
-        text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-      },
-      detailedInfo: {
-        header: "Air freight",
-        text: "With a relentless focus on efficiency, reliability,",
-        header_two: "Ocean freight",
-        text_two: "With a relentless focus on efficiency, reliability,",
-      },
-    },
+  const handleParagraphClick = (paragraphId) => {
+    setActiveShippingRate(paragraphId);
+  };
 
-    {
-      header: "Haulage",
-      svg: haulageIcon,
-      card_info: {
-        svg: procurementIcon,
-        header: "Integrated project procurement",
-        text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-      },
-      detailedInfo: {
-        header: "Barging",
-        text: "With a relentless focus on efficiency, reliability,",
-        header_two: "Trucking",
-        text_two: "With a relentless focus on efficiency, reliability,",
-      },
-    },
-
-    {
-      header: "Haulage",
-      svg: haulageIcon,
-      card_info: {
-        svg: warehouseIcon,
-        header: "Warehousing",
-        text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-      },
-      detailedInfo: {
-        header: "Barging",
-        text: "With a relentless focus on efficiency, reliability,",
-        header_two: "Trucking",
-        text_two: "With a relentless focus on efficiency, reliability,",
-      },
-    },
-  ];
+  const handleRateOptionIndex = (index) => {
+    setActiveOptionRate(index);
+  };
 
   return (
     <div>
@@ -188,6 +212,93 @@ function HomeBody() {
         <div className={styles.body_features_inner}>
           <div className={styles.body_features_header}>
             <h1>Shipping rates</h1>
+            <div className={styles.shipping_header}>
+              <p
+                className={
+                  activeShippingRate === "container" ? `${styles.clicked}` : ""
+                }
+                onClick={() => handleParagraphClick("container")}
+              >
+                Container
+              </p>
+
+              <p
+                className={
+                  activeShippingRate === "breakbulk" ? `${styles.clicked}` : ""
+                }
+                onClick={() => handleParagraphClick("breakbulk")}
+              >
+                Break bulk
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.rateOptionsFilter}>
+            <div className={styles.rateContainer}>
+              {activeShippingRate === "container" && (
+                <div className={styles.rateFilter}>
+                  <label>Size</label>
+                  <select>
+                    <option value="3">Placeholder</option>
+                  </select>
+                </div>
+              )}
+
+              <div className={styles.rateFilter}>
+                <label>Type</label>
+                <select>
+                  <option value="3">Placeholder</option>
+                </select>
+              </div>
+            </div>
+
+            <div className={styles.rateOptions}>
+              {rateOptions.map((data, index) => (
+                <div
+                  className={
+                    activeOptionRate === index
+                      ? `${styles.rateOptionsWrapper}`
+                      : `${styles.clickedRateOptionsWrapper}`
+                  }
+                  onClick={() => handleRateOptionIndex(index)}
+                  key={index}
+                >
+                  <p>{data}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className={styles.rates_card_wrapper}>
+            {rateOptions.map((data) => (
+              <Card className={styles.ratesCard} key={data}>
+                <div className={styles.rates_card_header}>
+                  <p>CompanyName</p>
+                  <p>JPNGO - EPGPSW</p>
+                </div>
+                <div>
+                  <h1>$3000</h1>
+                </div>
+
+                <div className={styles.rates_card_info}>
+                  <div>
+                    <p>Sailing date</p>
+                    <h2>N/A</h2>
+                  </div>
+                  <div>
+                    <p>Transit time</p>
+                    <h2>30 days</h2>
+                  </div>
+                  <div>
+                    <p>Free days</p>
+                    <h2>10 days</h2>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+          <div className={styles.btn}>
+            <Button>See more</Button>
           </div>
         </div>
       </div>
