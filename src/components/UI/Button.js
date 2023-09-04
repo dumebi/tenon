@@ -3,7 +3,7 @@ import styles from "./Ui.module.css";
 
 function Button(props) {
   return (
-    <div className={styles.button}>
+    <div className={`${styles.button} ${props.className}`}>
       <button>{props.children}</button>
     </div>
   );

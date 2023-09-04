@@ -46,3 +46,36 @@
     height: auto;
     object-fit: contain;
 }
+
+@media only screen and (max-width: 920px) {
+    .partners_header {
+        width: 100%;
+    }
+
+    .partners {
+        display: flex;
+        flex-direction: column;
+        padding: 3.125rem 1.5625rem;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+        background-color: var(--light-font-color);
+    }
+
+    .partners h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .partners_list {
+        gap: 0.8125rem;
+    }
+
+    .partners_image {
+        display: flex;
+        flex-basis: calc(25.3% - 1rem);
+        width: 4.709875em;
+        height: 1.613em;
+        margin-bottom: 0px;
+    }
+}

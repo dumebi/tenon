@@ -12,6 +12,8 @@
 
 .button button {
     border: none;
+    display: flex;
+    align-items: center;
     background-color: transparent;
     color: var(--light-font-color);
     font-family: var(--font-family);
@@ -20,6 +22,7 @@
     font-weight: var(--medium-font-weight);
     line-height: normal;
     cursor: pointer;
+    gap: 0.75rem;
 }
 
 /* card component styling */

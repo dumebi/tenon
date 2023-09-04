@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import styles from "./Hero.module.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Card from "../UI/Card";
 import solutionIcon from "../../assets/svg/Solution.svg";
 import communicationIcon from "../../assets/svg/Communication.svg";
@@ -10,6 +13,7 @@ import freightIcon from "../../assets/svg/Freight.svg";
 import procurementIcon from "../../assets/svg/Product-procurement.svg";
 import haulageIcon from "../../assets/svg/Haulage.svg";
 import warehouseIcon from "../../assets/svg/warehousing.svg";
+import manImg from "../../assets/smilling-man.png";
 import Button from "../UI/Button";
 import Partners from "../Layout/Partners";
 
@@ -157,6 +161,31 @@ function HomeBody() {
     } else {
       setOpenQuestion(index);
     }
+  };
+
+  const settings = {
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    cssEase: "linear",
+    autoplay: true,
+    infinite: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: true,
+    centerMode: true,
+
+    responsive: [
+      {
+        breakpoint: 540,
+        settings: {
+          centerMode: false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -476,6 +505,17 @@ function HomeBody() {
       {/* Gallery */}
       <div className={styles.gallery}>
         <h1>Our Gallery:</h1>
+        <div className={styles.carousel}>
+          <Slider {...settings}>
+            {rateOptions.map((index) => (
+              <div className={styles.gallery_img} key={index}>
+                <div className={styles.gallery_wrapper}>
+                  <img src={manImg} alt="gallery" />
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );
