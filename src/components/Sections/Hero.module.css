@@ -148,6 +148,14 @@
     padding: 3.75rem 6.25rem;
 }
 
+.body2 {
+    background-color: var(--background-color);
+    color: var(--dark-font-color) !important;
+    display: flex;
+    flex-direction: column;
+    padding: 3.75rem 6.25rem;
+}
+
 .body_about {
     display: flex;
     flex-direction: column;
@@ -178,7 +186,6 @@
 }
 
 .body_about div p {
-    color: var(--light-font-color) !important;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -190,8 +197,8 @@
     justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 50%;
     gap: 1.25rem;
+    flex-basis: 50%;
 }
 
 .card {
@@ -540,6 +547,99 @@
 .btn {
     display: flex;
     margin: auto;
-    width: 97px;
-    height: 37px;
+    width: 6.0625em;
+    height: 2.3125em;
+}
+
+/* data driven */
+.data_card {
+    display: flex;
+    background-color: var(--secondary);
+    width: 21.625em;
+    height: 14.25em;
+    align-items: center;
+}
+
+.data_card h1 {
+    color: var(--grey-10, #FFF);
+    text-align: center;
+
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.data_card p {
+    color: var(--grey-10, #FFF);
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* FAQ's */
+
+.faq {
+    width: 624px;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    gap: 40px;
+}
+
+.faq_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    cursor: pointer;
+    align-self: stretch;
+}
+
+.faq_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq_header svg {
+    cursor: pointer;
+}
+
+.faq p {
+    color: var(--grey-10, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.faq h1 {
+    color: var(--grey-10, #FFF);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* gallery */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+    width: 100%;
+    color: var(--grey-90, #3E414C);
+    padding: 1.25rem 6.25rem;
+}
+
+.gallery h1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
