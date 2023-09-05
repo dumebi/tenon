@@ -24,6 +24,15 @@
     line-height: normal;
 }
 
+.footer a {
+    text-decoration: none;
+    color: var(--button-text-color);
+    font-size: var(--small-text-size);
+    font-style: normal;
+    font-weight: var(--light-font-weight);
+    line-height: normal;
+}
+
 .footer div h1 {
     color: var(--button-text-color);
     font-size: 1.5rem;
@@ -42,6 +51,7 @@
 .contact .footer_socials {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 

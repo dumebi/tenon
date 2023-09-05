@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Footer.module.css";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   const [currentYear, setCurrentYear] = useState("");
@@ -80,10 +81,10 @@ function Footer() {
       <div className={styles.footer_company_info}>
         <div>
           <h1>Company</h1>
-          <p>About us</p>
-          <p>Contact us</p>
-          <p>FAQs</p>
-          <p>Report an incident</p>
+          <NavLink to="/about-us">About us</NavLink>
+          <NavLink to="/contact-us">Contact us</NavLink>
+          <NavLink to="/">FAQs</NavLink>
+          <NavLink to="/">Report an incident</NavLink>
         </div>
         <div>
           <h1>Legal</h1>

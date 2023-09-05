@@ -432,14 +432,6 @@
     appearance: none;
 }
 
-.body_features_inner .rateFilter select::after {
-    content: '\25BC';
-    /* Unicode character for a down arrow ▼ */
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-}
 
 
 .rateOptionsFilter {
@@ -877,6 +869,7 @@
 
 .join_team_info div {
     display: flex;
+    align-items: center;
     gap: 0.5rem;
 }
 
@@ -1188,8 +1181,8 @@
         flex-direction: column;
     }
 
-    .team_image .team_image_wrapper img {
-        object-fit: fill;
+    .team_cards {
+        width: 100%;
     }
 
     .team_join {

@@ -102,7 +102,7 @@ function Navbar() {
 
           <NavLink to="/">Services</NavLink>
           <NavLink to="/about-us">About us</NavLink>
-          <NavLink to="/">Contact us</NavLink>
+          <NavLink to="/contact-us">Contact us</NavLink>
 
           <div className={styles.mobile_auth}>
             <Button className={styles.mobile_auth_login}>Log in</Button>
@@ -126,7 +126,14 @@ function Navbar() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/">Contact Us</NavLink>
+          <NavLink
+            to="/contact-us"
+            className={(navData) =>
+              navData.isActive ? `${styles.active}` : ""
+            }
+          >
+            Contact Us
+          </NavLink>
         </li>
       </ul>
       <div className={styles.navbar_auth}>
