@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../components/Sections/Contact.module.css";
 import Navbar from "../components/Layout/Navbar";
 import Footer from "../components/Layout/Footer";
@@ -8,6 +8,11 @@ import Input from "../components/UI/Input";
 import TextArea from "../components/UI/TextArea";
 
 function ContactUs() {
+  const [sentFeedback, setSentFeedback] = useState(false);
+
+  const sendFeedback = () => {
+    setSentFeedback(true);
+  };
   return (
     <div>
       <Navbar />
@@ -146,36 +151,69 @@ function ContactUs() {
               </div>
             </div>
           </div>
-          <div className={styles.contact_input}>
-            <div className={styles.rateFilter}>
-              <label>
-                Select department <span>*</span>
-              </label>
-              <select>
-                <option value="3">Placeholder</option>
-              </select>
-            </div>
+          {!sentFeedback ? (
+            <div className={styles.contact_input}>
+              <div className={styles.rateFilter}>
+                <label>
+                  Select department <span>*</span>
+                </label>
+                <select>
+                  <option value="3">Placeholder</option>
+                </select>
+              </div>
 
-            <div className={styles.rateFilter}>
-              <Input label="Full name" placeholder="Placeholder" />
-            </div>
+              <div className={styles.rateFilter}>
+                <Input label="Full name" placeholder="Placeholder" />
+              </div>
 
-            <div className={styles.rateFilter}>
-              <Input label="Email address" placeholder="Placeholder" />
-            </div>
+              <div className={styles.rateFilter}>
+                <Input label="Email address" placeholder="Placeholder" />
+              </div>
 
-            <div className={styles.rateFilter}>
-              <Input label="Phone number" placeholder="Placeholder" />
-            </div>
+              <div className={styles.rateFilter}>
+                <Input label="Phone number" placeholder="Placeholder" />
+              </div>
 
-            <div className={styles.rateFilter}>
-              <TextArea label="Feedback" placeholder="Placeholder" />
-            </div>
+              <div className={styles.rateFilter}>
+                <TextArea label="Feedback" placeholder="Placeholder" />
+              </div>
 
-            <div className={styles.rateFilter}>
-              <Button>Send Feedback</Button>
+              <div className={styles.rateFilter} onClick={sendFeedback}>
+                <Button>Send Feedback</Button>
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className={styles.contact_success}>
+              <div className={styles.contact_success_inner}>
+                <svg
+                  width="80"
+                  height="80"
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.548828"
+                    y="0.5"
+                    width="79"
+                    height="79"
+                    rx="39.5"
+                    fill="#045159"
+                  />
+                  <path
+                    d="M34.4505 48.8815L60.1915 23.1377L64.154 27.0974L34.4505 56.801L16.6289 38.9794L20.5886 35.0197L34.4505 48.8815Z"
+                    fill="#CDDCDE"
+                  />
+                </svg>
+
+                <h1>Thank you for contacting us</h1>
+                <p>
+                  We appreciate your feedback. Somebody on our team will reach
+                  out to you as soon as possible to resolve this issue.
+                </p>
+              </div>
+            </div>
+          )}
         </div>
       </div>
       <Footer />

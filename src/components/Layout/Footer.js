@@ -88,8 +88,8 @@ function Footer() {
         </div>
         <div>
           <h1>Legal</h1>
-          <p>Terms and conditions</p>
-          <p>Privacy policy</p>
+          <NavLink to="/terms-and-conditions">Terms and conditions</NavLink>
+          <NavLink to="/privacy">Privacy policy</NavLink>
         </div>
       </div>
       <div className={styles.contact}>

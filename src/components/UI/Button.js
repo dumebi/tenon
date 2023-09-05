@@ -4,7 +4,7 @@ import styles from "./Ui.module.css";
 function Button(props) {
   return (
     <div className={`${styles.button} ${props.className}`}>
-      <button>{props.children}</button>
+      <button onClick={props.onClick}>{props.children}</button>
     </div>
   );
 }
