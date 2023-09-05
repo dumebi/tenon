@@ -68,6 +68,14 @@
     line-height: normal;
 }
 
+ul li .active {
+    color: var(--secondary-50, #F05E22);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 .hamburger_wrapper {
     display: none;
 }
@@ -75,6 +83,7 @@
 .mobile_menu {
     display: none;
 }
+
 
 @media only screen and (max-width: 920px) {
     .navbar ul {

@@ -255,6 +255,14 @@
     line-height: normal;
 }
 
+.body_features_header h1 {
+    font-size: 3rem;
+    font-style: normal;
+    text-align: center;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
 .body_features_header {
     display: flex;
     flex-direction: column;
@@ -266,6 +274,13 @@
 }
 
 .body_features .body_features_header p {
+    font-size: var(--medium-text-size);
+    font-style: normal;
+    font-weight: var(--light-font-weight);
+    line-height: normal;
+}
+
+.body_features_header p {
     font-size: var(--medium-text-size);
     font-style: normal;
     font-weight: var(--light-font-weight);
@@ -657,17 +672,17 @@
     line-height: normal;
 }
 
-.carousel {
+.carousel_container {
     width: 100%;
 }
 
 .gallery_img {
     display: flex;
-    width: 19.9375em !important;
+    width: 25.9375em !important;
     height: 19.75em;
     gap: 1.3125rem;
-    margin-right: 20px;
 }
+
 
 .gallery_img .gallery_wrapper {
     width: 100%;
@@ -677,8 +692,204 @@
 
 .gallery_img .gallery_wrapper img {
     width: 100%;
+    display: flex;
     height: auto;
+    object-fit: contain;
 }
+
+/* Our story */
+
+.out_story_container {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    padding: 1.25rem 6.25rem;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.out_story_container div {
+    flex: 1;
+}
+
+.out_story_container div h1 {
+    color: var(--dark-font-color);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
+.out_story_container div p {
+    color: var(--dark-font-color);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: var(--light-font-weight);
+    line-height: normal;
+}
+
+/* Team */
+
+.team {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 6.25rem;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.team_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.team_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8125rem;
+}
+
+.team_profile_card {
+    display: flex;
+    width: 18.4375em;
+    padding: 1rem;
+    height: 33.0625em;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 1.25rem;
+    margin-top: 3rem;
+    flex-basis: calc(25% - 10px);
+}
+
+.team_image {
+    display: flex;
+    height: 17.375em;
+    width: 100%;
+    align-self: center;
+}
+
+.team_image .team_image_wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.team_image .team_image_wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.team_info {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 0.875rem;
+}
+
+.team_info h1 {
+    color: var(--dark-font-color);
+    font-size: var(--medium-text-size);
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
+.team_info p:nth-child(2) {
+    color: var(--dark-font-color);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: var(--light-font-weight);
+    line-height: normal;
+}
+
+.team_info p:nth-child(3) {
+    color: var(--dark-font-color);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: var(--light-font-weight);
+    line-height: normal;
+}
+
+.team_join {
+    gap: 1.9375rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+}
+
+.join_our_team {
+    background-color: var(--background-color);
+    color: var(--dark-font-color) !important;
+    display: flex;
+    flex-direction: column;
+    padding: 3.75rem 6.25rem;
+}
+
+.team_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.join_team_card {
+    height: 12.125em;
+    width: 32.34375em;
+    display: flex;
+    padding: 1.875rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    border: 1px solid#CDDCDE;
+    box-shadow: none;
+    border-radius: 1.25rem;
+}
+
+.join_team_card h1 {
+    color: #02292D;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.875rem;
+}
+
+.join_team_card p {
+    color: #8896AB;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.join_team_info {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.join_team_info div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.join_our_info p {
+    color: #8896AB;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+
 
 @media only screen and (max-width: 920px) {
     .hero {
@@ -813,7 +1024,11 @@
     }
 
     .body_features .body_features_header h1 {
-        font-size: 24px;
+        font-size: 1.5rem;
+    }
+
+    .body_features_header h1 {
+        font-size: 1.5rem;
     }
 
     .body_features_header {
@@ -821,7 +1036,11 @@
     }
 
     .body_features .body_features_header p {
-        font-size: 14px;
+        font-size: 0.875rem;
+    }
+
+    .body_features_header p {
+        font-size: 0.875rem;
     }
 
     .body_features_main .body_features_main_wrapper {
@@ -929,5 +1148,83 @@
     .gallery_img {
         width: 9.5556875em !important;
         height: 10.8109375em;
+        margin-right: 1.25rem;
+    }
+
+    /* Our story  */
+
+    .out_story_container {
+        flex-direction: column;
+        padding: 0rem 1.5625rem;
+        gap: 1.5rem;
+    }
+
+    .out_story_container div {
+        width: 100%;
+    }
+
+    .out_story_container div h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .out_story_container div p {
+        font-size: 16px;
+    }
+
+    /* Team */
+    .team {
+        padding: 0rem 1.5625rem;
+    }
+
+    .team_list {
+        flex-direction: column;
+        gap: 0.8125rem;
+    }
+
+    .team_profile_card {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .team_image .team_image_wrapper img {
+        object-fit: fill;
+    }
+
+    .team_join {
+        gap: 1.5rem;
+        flex-direction: column;
+    }
+
+    .join_our_team {
+        padding: 0rem 1.5625rem;
+        padding-bottom: 3.125rem;
+    }
+
+    .join_team_card {
+        height: 8.625em;
+        width: 100%;
+        padding: 0.9375rem;
+    }
+
+    .join_team_card h1 {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: normal;
+
+    }
+
+    .join_team_card p {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .join_our_info p {
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 }

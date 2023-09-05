@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./Hero.module.css";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Flickity from "flickity";
+import "flickity/css/flickity.css";
 import Card from "../UI/Card";
 import solutionIcon from "../../assets/svg/Solution.svg";
 import communicationIcon from "../../assets/svg/Communication.svg";
@@ -146,6 +145,23 @@ function HomeBody() {
   const [activeOptionRate, setActiveOptionRate] = useState(0);
   const [openQuestion, setOpenQuestion] = useState(null);
 
+  const flickityRef = useRef(null);
+
+  useEffect(() => {
+    // Initialize Flickity when the component mounts
+    flickityRef.current = new Flickity(".carousel", {
+      cellAlign: "center",
+      contain: false,
+      wrapAround: true,
+      autoPlay: 3000,
+      prevNextButtons: false,
+      pageDots: false,
+    });
+
+    // Clean up and destroy Flickity when the component unmounts
+    return () => flickityRef.current.destroy();
+  }, []);
+
   const handleParagraphClick = (paragraphId) => {
     setActiveShippingRate(paragraphId);
   };
@@ -161,31 +177,6 @@ function HomeBody() {
     } else {
       setOpenQuestion(index);
     }
-  };
-
-  const settings = {
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    cssEase: "linear",
-    autoplay: true,
-    infinite: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-    dots: true,
-    centerMode: true,
-
-    responsive: [
-      {
-        breakpoint: 540,
-        settings: {
-          centerMode: false,
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
-    ],
   };
 
   return (
@@ -505,8 +496,8 @@ function HomeBody() {
       {/* Gallery */}
       <div className={styles.gallery}>
         <h1>Our Gallery:</h1>
-        <div className={styles.carousel}>
-          <Slider {...settings}>
+        <div className={styles.carousel_container}>
+          <div className="carousel">
             {rateOptions.map((index) => (
               <div className={styles.gallery_img} key={index}>
                 <div className={styles.gallery_wrapper}>
@@ -514,7 +505,7 @@ function HomeBody() {
                 </div>
               </div>
             ))}
-          </Slider>
+          </div>
         </div>
       </div>
     </div>

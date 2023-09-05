@@ -11,11 +11,13 @@ function Navbar() {
   };
   return (
     <nav className={styles.navbar}>
-      <div className={styles.navbar_logo}>
-        <div className={styles.navbar_logo_wrapper}>
-          <img src={logo} alt="logo" />
+      <NavLink to="/">
+        <div className={styles.navbar_logo}>
+          <div className={styles.navbar_logo_wrapper}>
+            <img src={logo} alt="logo" />
+          </div>
         </div>
-      </div>
+      </NavLink>
 
       {/* hamburger icon */}
       <div
@@ -63,11 +65,13 @@ function Navbar() {
           }`}
         >
           <div className={styles.mobile_menu_header}>
-            <div className={styles.navbar_logo}>
-              <div className={styles.navbar_logo_wrapper}>
-                <img src={logo} alt="logo" />
+            <NavLink to="/">
+              <div className={styles.navbar_logo}>
+                <div className={styles.navbar_logo_wrapper}>
+                  <img src={logo} alt="logo" />
+                </div>
               </div>
-            </div>
+            </NavLink>
 
             <svg
               onClick={closeMenuHandler}
@@ -96,9 +100,9 @@ function Navbar() {
             </svg>
           </div>
 
-          <p>Services</p>
-          <p>About us</p>
-          <p>Contact us</p>
+          <NavLink to="/">Services</NavLink>
+          <NavLink to="/about-us">About us</NavLink>
+          <NavLink to="/">Contact us</NavLink>
 
           <div className={styles.mobile_auth}>
             <Button className={styles.mobile_auth_login}>Log in</Button>
@@ -112,7 +116,14 @@ function Navbar() {
           <NavLink to="/">Services</NavLink>
         </li>
         <li>
-          <NavLink to="/">About Us</NavLink>
+          <NavLink
+            to="/about-us"
+            className={(navData) =>
+              navData.isActive ? `${styles.active}` : ""
+            }
+          >
+            About Us
+          </NavLink>
         </li>
         <li>
           <NavLink to="/">Contact Us</NavLink>
