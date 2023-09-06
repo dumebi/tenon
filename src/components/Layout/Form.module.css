@@ -140,6 +140,7 @@
     border-radius: 0.125rem;
     display: flex;
     padding: 1.5rem;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;

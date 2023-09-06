@@ -16,7 +16,7 @@ function Services() {
 
   useEffect(() => {
     // Initialize Flickity when the component mounts
-    flickityRef.current = new Flickity(".carousel", {
+    flickityRef.current = new Flickity(".service_carousel", {
       cellAlign: "center",
       contain: true,
       wrapAround: true,
@@ -57,7 +57,7 @@ function Services() {
               <Button>Explore services</Button>
             </div>
             <div className={styles.carousel_container}>
-              <div className="carousel">
+              <div className="service_carousel">
                 {items.map((index) => {
                   return (
                     <div key={index} className={styles.service_images}>

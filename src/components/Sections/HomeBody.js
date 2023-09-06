@@ -15,6 +15,7 @@ import warehouseIcon from "../../assets/svg/warehousing.svg";
 import manImg from "../../assets/smilling-man.png";
 import Button from "../UI/Button";
 import Partners from "../Layout/Partners";
+import "../../App.css";
 
 const tenon_about = [
   {
@@ -79,12 +80,6 @@ const tenon_features = [
       svg: warehouseIcon,
       header: "Warehousing",
       text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-    },
-    detailedInfo: {
-      header: "Barging",
-      text: "With a relentless focus on efficiency, reliability,",
-      header_two: "Trucking",
-      text_two: "With a relentless focus on efficiency, reliability,",
     },
   },
 ];
@@ -152,7 +147,7 @@ function HomeBody() {
       cellAlign: "center",
       contain: false,
       wrapAround: true,
-      autoPlay: 3000,
+      autoPlay: 2000,
       prevNextButtons: false,
       pageDots: false,
     });
@@ -230,47 +225,53 @@ function HomeBody() {
                   <p>{data.card_info.text}</p>
                   <p>Learn more</p>
                 </Card>
-                <Card className={styles.body_features_main_second_card}>
-                  <div className={styles.svg_wrapper}>
-                    <img src={data.svg} alt="icon" />
-                  </div>
-                  <p>{data.header}</p>
-                  <div className={styles.body_features_main_second_card_inner}>
-                    <div className={styles.body_features_main_second_card_text}>
-                      <p>{data.detailedInfo.header}</p>
-                      <p>{data.detailedInfo.text}</p>
+                {data.detailedInfo && (
+                  <Card className={styles.body_features_main_second_card}>
+                    <div className={styles.svg_wrapper}>
+                      <img src={data.svg} alt="icon" />
                     </div>
-
+                    <p>{data.header}</p>
                     <div
-                      className={
-                        styles.body_features_main_second_card_inner_second
-                      }
+                      className={styles.body_features_main_second_card_inner}
                     >
-                      <svg
-                        width="2"
-                        height="82"
-                        viewBox="0 0 2 82"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <line
-                          x1="1.04883"
-                          y1="0.220703"
-                          x2="1.04883"
-                          y2="81.2207"
-                          stroke="#DCDEE6"
-                        />
-                      </svg>
                       <div
                         className={styles.body_features_main_second_card_text}
                       >
-                        <p>{data.detailedInfo.header_two}</p>
-                        <p>{data.detailedInfo.text_two}</p>
+                        <p>{data.detailedInfo.header}</p>
+                        <p>{data.detailedInfo.text}</p>
+                      </div>
+
+                      <div
+                        className={
+                          styles.body_features_main_second_card_inner_second
+                        }
+                      >
+                        <svg
+                          width="2"
+                          height="82"
+                          viewBox="0 0 2 82"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <line
+                            x1="1.04883"
+                            y1="0.220703"
+                            x2="1.04883"
+                            y2="81.2207"
+                            stroke="#DCDEE6"
+                          />
+                        </svg>
+                        <div
+                          className={styles.body_features_main_second_card_text}
+                        >
+                          <p>{data.detailedInfo.header_two}</p>
+                          <p>{data.detailedInfo.text_two}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p>Learn more</p>
-                </Card>
+                    <p>Learn more</p>
+                  </Card>
+                )}
               </div>
             ))}
           </div>
@@ -399,8 +400,8 @@ function HomeBody() {
               <p>Value of cargo handled</p>
             </Card>
             <Card className={styles.data_card}>
-              <h1>Total hours -</h1>
-              <p>LTI</p>
+              <h2>Total man hours -</h2>
+              <h3>LTI - </h3>
             </Card>
             <Card className={styles.data_card}>
               <h1>30 billion</h1>

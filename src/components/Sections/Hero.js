@@ -39,7 +39,7 @@ function Hero() {
         setCurrentPhrase(phrases[phraseIndex]);
         setIsHidden(false);
       }, 500);
-    }, 2500);
+    }, 800);
 
     return () => clearInterval(interval);
   }, [phraseIndex, phrases]);
