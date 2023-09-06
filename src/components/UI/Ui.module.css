@@ -48,6 +48,21 @@
     border: 0.0625rem solid var(--grey-font-color);
 }
 
+.input div {
+    display: flex;
+    align-items: center;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid var(--grey-font-color);
+}
+
+.input div svg {
+    margin-right: 12px;
+}
+
+.input div input {
+    border: none;
+}
+
 .text_area {
     width: 100%;
     gap: 0.5rem;

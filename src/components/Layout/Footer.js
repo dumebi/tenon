@@ -17,7 +17,7 @@ function Footer() {
   }, []);
   return (
     <div className={styles.footer}>
-      <div>
+      <div className={styles.company}>
         <svg
           width="137"
           height="68"

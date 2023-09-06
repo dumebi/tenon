@@ -7,7 +7,6 @@ import styles from "../components/Sections/Service.module.css";
 import Button from "../components/UI/Button";
 import serviceImg from "../assets/tenon_services.png";
 import freightImg from "../assets/freight.png";
-import { Link } from "react-router-dom";
 import Card from "../components/UI/Card";
 
 const items = Array.from({ length: 4 });
@@ -30,6 +29,13 @@ function Services() {
     return () => flickityRef.current.destroy();
   }, []);
 
+  const scrollToSection = (id) => {
+    const section = document.querySelector(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div>
       <Navbar />
@@ -47,13 +53,9 @@ function Services() {
               operations to drive unparalleled success for businesses of all
               sizes.{" "}
             </p>
-
-            <Link to="/services">
-              <div>
-                <Button>Explore services</Button>
-              </div>
-            </Link>
-
+            <div onClick={() => scrollToSection("#services")}>
+              <Button>Explore services</Button>
+            </div>
             <div className={styles.carousel_container}>
               <div className="carousel">
                 {items.map((index) => {
@@ -70,7 +72,7 @@ function Services() {
           </div>
         </div>
 
-        <div className={styles.all_services}>
+        <div id="services" className={styles.all_services}>
           {/* services */}
           <div className={styles.service_wrapper}>
             <div className={styles.services_text}>

@@ -105,8 +105,12 @@ function Navbar() {
           <NavLink to="/contact-us">Contact us</NavLink>
 
           <div className={styles.mobile_auth}>
-            <Button className={styles.mobile_auth_login}>Log in</Button>
-            <Button>Sign up</Button>
+            <Link to="/login">
+              <Button className={styles.mobile_auth_login}>Log in</Button>
+            </Link>
+            <Link to="/sign-up">
+              <Button>Sign up</Button>
+            </Link>
           </div>
         </div>
       )}
@@ -145,7 +149,7 @@ function Navbar() {
       </ul>
       <div className={styles.navbar_auth}>
         <div>
-          <NavLink to="/">Log in</NavLink>
+          <NavLink to="/login">Log in</NavLink>
         </div>
 
         <svg
@@ -164,7 +168,7 @@ function Navbar() {
           />
         </svg>
 
-        <Link to="/">
+        <Link to="/sign-up">
           <div>
             <Button>Sign up</Button>
           </div>

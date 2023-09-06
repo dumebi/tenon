@@ -47,6 +47,10 @@
     gap: 1.5rem;
 }
 
+.report_login_info {
+    width: 24.375em;
+}
+
 .report_personal_info p {
     color: var(--light-font-color);
     font-size: 1.5rem;
@@ -62,7 +66,7 @@
     width: 100%;
 }
 
-.report_personal_info_input input,
+.input input,
 .report_personal_info_input_file_inner input {
     flex: 1;
     background-color: var(--green-background);
@@ -75,7 +79,11 @@
     border: none;
 }
 
-.report_personal_info_input label span,
+.input label {
+    font-weight: var(--medium-font-weight);
+}
+
+.input label span,
 .report_personal_info_input_file_inner label span {
     display: none;
 }
@@ -111,7 +119,7 @@
 .rateFilter label {
     font-size: var(--small-text-size);
     font-style: normal;
-    font-weight: var(--light-font-weight);
+    font-weight: var(--medium-font-weight);
     line-height: normal;
 }
 
@@ -136,7 +144,6 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    align-self: stretch;
     border: 1px dashed var(--border-default-color);
 }
 
@@ -158,6 +165,67 @@
 
 .btn {
     margin-bottom: 1.5rem;
+}
+
+.report_header a {
+    color: var(--grey-10, #FFF);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.user_type {
+    display: flex;
+    width: 19.5625em;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.user_type div {
+    display: flex;
+    padding: 0.625rem 0.9375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.9375rem;
+    cursor: pointer;
+    border: 1px solid #FFF;
+    background: var(--primary-70, #03363B);
+}
+
+.user_type div p {
+    color: var(--grey-20, #EDEEF2);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.other_options {
+    margin: auto;
+    display: flex;
+    width: 22.375em;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.other_options p {
+    color: var(--grey-20, #EDEEF2);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.sign_up_options {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+    margin-bottom: 3.125rem;
 }
 
 @media only screen and (max-width: 920px) {
@@ -194,5 +262,30 @@
 
     .report_personal_info_input_file p {
         font-size: 0.75rem;
+    }
+
+    .report_header svg {
+        width: 4.28125em;
+        height: 2.1165625em;
+    }
+
+    .user_type {
+        width: 100%;
+    }
+
+    .other_options {
+        width: 100%;
+    }
+
+    .other_options svg {
+        width: 6.625em;
+    }
+
+    .other_options p {
+        color: var(--grey-20, #EDEEF2);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
     }
 }

@@ -8,6 +8,8 @@ import Privacy from "./pages/Privacy";
 import Services from "./pages/Services";
 import Faq from "./components/Sections/Faq";
 import IncidentReport from "./pages/IncidentReport";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/report" element={<IncidentReport />} />
+        <Route path="/sign-up" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/faq" element={<Faq />} />
       </Routes>
     </div>

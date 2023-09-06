@@ -1,0 +1,16 @@
+.selected-flag {
+    background-color: var(--green-background) !important;
+}
+
+.flag-dropdown {
+    width: 20%;
+    background-color: var(--green-background) !important;
+}
+
+.country-list {
+    background-color: var(--green-background) !important;
+}
+
+.highlight {
+    color: var(--dark-font-color) !important;
+}
