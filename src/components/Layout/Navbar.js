@@ -100,7 +100,7 @@ function Navbar() {
             </svg>
           </div>
 
-          <NavLink to="/">Services</NavLink>
+          <NavLink to="/services">Services</NavLink>
           <NavLink to="/about-us">About us</NavLink>
           <NavLink to="/contact-us">Contact us</NavLink>
 
@@ -113,7 +113,14 @@ function Navbar() {
 
       <ul>
         <li>
-          <NavLink to="/">Services</NavLink>
+          <NavLink
+            to="/services"
+            className={(navData) =>
+              navData.isActive ? `${styles.active}` : ""
+            }
+          >
+            Services
+          </NavLink>
         </li>
         <li>
           <NavLink

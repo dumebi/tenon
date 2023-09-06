@@ -20,11 +20,11 @@
 }
 
 .tc_inner h1 {
-    color: var(--grey-90, #3E414C);
+    color: var(--dark-font-color);
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: var(--medium-font-weight);
     line-height: normal;
 }
 
@@ -36,18 +36,18 @@
 }
 
 .tc_inner h2 {
-    color: var(--grey-90, #3E414C);
+    color: var(--dark-font-color);
     font-size: 24px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: var(--medium-font-weight);
     line-height: normal;
 }
 
 .tc_inner p {
-    color: var(--grey-90, #3E414C);
-    font-size: 18px;
+    color: var(--dark-font-color);
+    font-size: 1.125rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: var(--light-font-weight);
     line-height: normal;
 }
 

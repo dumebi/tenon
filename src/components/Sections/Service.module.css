@@ -1,0 +1,349 @@
+.services {
+    margin-top: 9.375rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 8rem;
+    font-family: var(--font-family);
+}
+
+.services_hero_container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 6.25rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1.5rem;
+    width: 79.125em;
+}
+
+.services_hero h1 {
+    color: var(--dark-font-color);
+    font-size: 4.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    line-height: normal;
+}
+
+.services_hero h1 span {
+    background: linear-gradient(95deg, #F05E22 0.55%, #FF9F77 33.77%, #CB7855 49.82%, #4E1C08 72.21%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+.services_hero p {
+    color: var(--dark-font-color);
+    font-size: var(--medium-text-size);
+    font-style: normal;
+    text-align: center;
+    font-weight: var(--light-font-weight);
+    line-height: normal;
+}
+
+.services_hero a {
+    text-decoration: none;
+}
+
+.carousel_container {
+    width: 100%;
+}
+
+.service_images {
+    width: 100%;
+    height: 27.5em;
+    display: flex;
+}
+
+.service_images .service_images_wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.service_images .service_images_wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.9375rem;
+    object-fit: cover;
+}
+
+.service_wrapper {
+    display: flex;
+    width: 100%;
+    padding: 3.75rem 6.25rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1.9375rem;
+    background: var(--green-background);
+}
+
+.all_services {
+    gap: 1.9375rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.services_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 28.6875em;
+}
+
+.services_text h1 {
+    color: var(--light-font-color);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.services_text p {
+    color: var(--light-font-color);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: var(--light-font-weight);
+    line-height: normal;
+}
+
+.services_info_images {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.services_images_inner {
+    width: 39.8125em;
+    height: 37.875em;
+    display: flex;
+    border-radius: 2.5rem 2.5rem 2.5rem 25rem;
+    background: #D9D9D9;
+}
+
+.services_images_inner .services_images_wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.services_images_inner .services_images_wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 2.5rem 2.5rem 2.5rem 25rem;
+    object-fit: cover;
+}
+
+.service_wrapper:nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+.service_wrapper:nth-child(3) .services_info_images {
+    justify-content: flex-start;
+}
+
+.second_service_wrapper {
+    display: flex;
+    width: 100%;
+    padding: 3.75rem 6.25rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 3.625rem;
+    flex-wrap: wrap;
+}
+
+.second_service_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    align-self: stretch;
+}
+
+.second_service_header h1 {
+    color: var(--dark-font-color);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.second_service_header p {
+    color: var(--dark-font-color);
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: var(--light-font-weight);
+    line-height: normal;
+}
+
+.second_service_freight_list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.freight_card {
+    display: flex;
+    width: 25.041875em;
+    height: 30.5em;
+    padding: 1.875rem 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    flex-basis: calc(33.33% - 1.25rem);
+}
+
+.freight_card_image {
+    width: 100%;
+    height: 12.9375em;
+    display: flex;
+}
+
+.freight_card_image .freight_card_image_wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.freight_card_image .freight_card_image_wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.9375rem;
+}
+
+.freight_card h1 {
+    color: var(--dark-font-color);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
+.freight_card p {
+    color: var(--dark-font-color);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: var(--light-font-weight);
+    line-height: normal;
+}
+
+.second_service_wrapper:nth-child(4) .freight_card {
+    flex-basis: calc(50% - 1.25rem);
+}
+
+
+
+@media only screen and (max-width: 920px) {
+    .services {
+        margin-top: 6.375rem;
+        gap: 5.5rem;
+    }
+
+    .services_hero_container {
+        padding: 0rem 1.5rem;
+        flex-direction: column;
+        width: 100%;
+        gap: 1.5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .services_hero_container h1 {
+        color: var(--dark-font-color);
+        font-size: 24px;
+    }
+
+    .services_hero_container p {
+        color: var(--dark-font-color);
+        font-size: 0.875rem;
+    }
+
+    .service_images {
+        height: 440px;
+        align-self: stretch;
+    }
+
+    .service_images .service_images_wrapper img {
+        object-fit: cover;
+    }
+
+    .service_wrapper {
+        padding: 60px 12px;
+        flex-direction: column;
+    }
+
+    .services_text {
+        width: 100%;
+        align-items: center;
+    }
+
+    .services_text h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .services_text p {
+        text-align: center;
+        font-size: 0.875rem;
+    }
+
+    .services_images_inner {
+        height: 328px;
+        width: 318px;
+        border-radius: 1.1048rem 1.1048rem 1.1048rem 11.0479rem;
+    }
+
+    .services_images_inner .services_images_wrapper img {
+        border-radius: 1.1048rem 1.1048rem 1.1048rem 11.0479rem;
+    }
+
+    .service_wrapper:nth-child(3) {
+        flex-direction: column;
+    }
+
+    .all_services {
+        padding: 0rem 1.5rem;
+    }
+
+    .second_service_wrapper {
+        padding: 3.75rem 0rem;
+    }
+
+    .second_service_header h1 {
+        font-size: 1.5rem;
+    }
+
+    .second_service_header p {
+        font-size: 14px;
+    }
+
+    .second_service_freight_list {
+        flex-direction: column;
+    }
+
+    .freight_card {
+        display: flex;
+        width: 100%;
+        height: 31.0625em;
+    }
+
+    .freight_card p {
+        font-size: 1rem;
+    }
+}

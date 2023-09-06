@@ -72,7 +72,7 @@ function Hero() {
               </p>
             </div>
 
-            <Link to="/">
+            <Link to="/services">
               <div>
                 <Button>Explore services</Button>
               </div>

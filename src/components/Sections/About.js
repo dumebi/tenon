@@ -134,7 +134,7 @@ function About() {
           </div>
           <div className={styles.team_cards}>
             {items.map((index) => (
-              <Card className={styles.join_team_card}>
+              <Card className={styles.join_team_card} key={index}>
                 <h1>Front-end Developer</h1>
                 <p>
                   We’re looking for a mid-level Front-end Developer to join our
