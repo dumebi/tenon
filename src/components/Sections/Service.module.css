@@ -1,5 +1,6 @@
 .services {
     margin-top: 9.375rem;
+    margin-bottom: 8rem;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -247,12 +248,22 @@
     flex-basis: calc(50% - 1.25rem);
 }
 
+.second_service_wrapper:nth-child(4) .freight_card .freight_card_image .freight_card_image_wrapper img {
+    border-radius: 2.5rem;
+}
+
+.button {
+    background-color: #02292D;
+}
+
+
 
 
 @media only screen and (max-width: 920px) {
     .services {
         margin-top: 6.375rem;
         gap: 5.5rem;
+        margin-bottom: 5.5rem;
     }
 
     .services_hero_container {

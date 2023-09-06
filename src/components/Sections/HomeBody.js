@@ -137,7 +137,6 @@ const faqData = [
     answer:
       "Orders are usually shipped within 1-2 business days after placing the order.",
   },
-  // Add more FAQ items as needed
 ];
 
 function HomeBody() {

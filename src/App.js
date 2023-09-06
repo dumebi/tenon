@@ -6,6 +6,8 @@ import ContactUs from "./pages/ContactUs";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import Privacy from "./pages/Privacy";
 import Services from "./pages/Services";
+import Faq from "./components/Sections/Faq";
+import IncidentReport from "./pages/IncidentReport";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/report" element={<IncidentReport />} />
+        <Route path="/faq" element={<Faq />} />
       </Routes>
     </div>
   );

@@ -203,7 +203,7 @@ function Services() {
                   aliquet etiam amet vitae pharetra. At tristique pellentesque.
                 </p>
                 <div>
-                  <Button>Book now</Button>
+                  <Button className={styles.button}>Book now</Button>
                 </div>
               </Card>
 
@@ -220,7 +220,7 @@ function Services() {
                   aliquet etiam amet vitae pharetra. At tristique pellentesque.
                 </p>
                 <div>
-                  <Button>Book now</Button>
+                  <Button className={styles.button}>Book now</Button>
                 </div>
               </Card>
             </div>

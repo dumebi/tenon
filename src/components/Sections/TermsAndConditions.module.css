@@ -1,9 +1,9 @@
 .tc {
-    margin-top: 9.375rem;
+    margin-top: 8.2rem;
     display: flex;
     width: 100%;
     flex-direction: column;
-    gap: 8rem;
+    gap: 4.0625rem;
     font-family: var(--font-family);
 }
 
@@ -17,6 +17,20 @@
     align-items: center;
     align-content: center;
     gap: 3.4375rem;
+}
+
+.tc_header {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 6.25rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 3.4375rem;
+    color: var(--light-font-color);
+    background-color: var(--green-background);
 }
 
 .tc_inner h1 {
@@ -51,16 +65,71 @@
     line-height: normal;
 }
 
+.faq {
+    margin: auto;
+    display: flex;
+    width: 55.4375em;
+    padding: 1.875rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.faq_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.875rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.faq_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq_header svg {
+    cursor: pointer;
+}
+
+.faq p {
+    color: var(--dark-font-color);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.faq h1 {
+    color: var(--dark-font-color);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 @media only screen and (max-width: 920px) {
     .tc {
         margin-top: 3.375rem;
-        gap: 5.5rem;
+        gap: 1.5rem;
+    }
+
+    .tc_header {
+        padding: 3.125rem 1.5rem;
+        flex-direction: column;
+        gap: 2.75rem;
     }
 
     .tc_inner {
         padding: 3.125rem 1.5rem;
         flex-direction: column;
         gap: 2.75rem;
+    }
+
+    .tc_header h1 {
+        font-size: 1.5rem;
     }
 
     .tc_inner h1 {
@@ -79,6 +148,19 @@
     }
 
     .tc_inner p {
+        font-size: 0.875rem;
+    }
+
+    .faq {
+        padding: 1.875rem;
+        width: 100%;
+    }
+
+    .faq p {
+        font-size: 0.875rem;
+    }
+
+    .faq h1 {
         font-size: 0.875rem;
     }
 }

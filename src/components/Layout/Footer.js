@@ -83,8 +83,8 @@ function Footer() {
           <h1>Company</h1>
           <NavLink to="/about-us">About us</NavLink>
           <NavLink to="/contact-us">Contact us</NavLink>
-          <NavLink to="/">FAQs</NavLink>
-          <NavLink to="/">Report an incident</NavLink>
+          <NavLink to="/faq">FAQs</NavLink>
+          <NavLink to="/report">Report an incident</NavLink>
         </div>
         <div>
           <h1>Legal</h1>
