@@ -95,7 +95,7 @@ function Login() {
               placeholder="Placeholder"
             />
           </div>
-          <Button className={styles.btn}>Create account</Button>
+          <Button className={styles.btn}>Sign in</Button>
           <div className={styles.other_options}>
             <svg
               width="126"

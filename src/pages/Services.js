@@ -129,7 +129,7 @@ function Services() {
                     <img src={freightImg} alt="freight" />
                   </div>
                 </div>
-                <h1>Air freight</h1>
+                <h1>Ocean freight</h1>
                 <p>
                   Lorem ipsum dolor sit amet consectetur. Viverra morbi etiam
                   amet tempor diam netus ultrices. Tempus vitae habitasse
@@ -146,7 +146,7 @@ function Services() {
                     <img src={freightImg} alt="freight" />
                   </div>
                 </div>
-                <h1>Air freight</h1>
+                <h1>Rail freight</h1>
                 <p>
                   Lorem ipsum dolor sit amet consectetur. Viverra morbi etiam
                   amet tempor diam netus ultrices. Tempus vitae habitasse

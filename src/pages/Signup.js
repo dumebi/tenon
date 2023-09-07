@@ -12,9 +12,19 @@ import Button from "../components/UI/Button";
 
 function Signup() {
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [userType, setUserType] = useState(null);
 
-  const handlePhoneNumberChange = (value, countryData) => {
+  const handlePhoneNumberChange = (value) => {
     setPhoneNumber(value);
+  };
+
+  //Set the user type (Customer or agent)
+  const handleUserType = (value) => {
+    if (value === userType) {
+      setUserType(null);
+    } else {
+      setUserType(value);
+    }
   };
 
   return (
@@ -125,10 +135,16 @@ function Signup() {
             <div className={styles.rateFilter}>
               <label>User type</label>
               <div className={styles.user_type}>
-                <div>
+                <div
+                  className={userType === "customer" ? styles.activeUser : ""}
+                  onClick={() => handleUserType("customer")}
+                >
                   <p>I am a customer</p>
                 </div>
-                <div>
+                <div
+                  className={userType === "agent" ? styles.activeUser : ""}
+                  onClick={() => handleUserType("agent")}
+                >
                   <p>I am an agent</p>
                 </div>
               </div>

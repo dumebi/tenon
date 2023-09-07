@@ -169,10 +169,10 @@
 }
 
 .report_header a {
-    color: var(--grey-10, #FFF);
+    color: #FFF;
     font-size: 1.125rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: var(--medium-font-weight);
     line-height: normal;
     text-decoration: none;
 }
@@ -181,7 +181,7 @@
     display: flex;
     width: 19.5625em;
     align-items: flex-start;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .user_type div {
@@ -192,15 +192,18 @@
     gap: 0.625rem;
     border-radius: 0.9375rem;
     cursor: pointer;
+    background: #03363B;
+}
+
+.activeUser {
     border: 1px solid #FFF;
-    background: var(--primary-70, #03363B);
 }
 
 .user_type div p {
-    color: var(--grey-20, #EDEEF2);
+    color: #EDEEF2;
     font-size: 0.875rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: var(--light-font-weight);
     line-height: normal;
 }
 
@@ -209,11 +212,12 @@
     display: flex;
     width: 22.375em;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
 }
 
 .other_options p {
-    color: var(--grey-20, #EDEEF2);
+    color: #EDEEF2;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 500;
@@ -276,6 +280,8 @@
 
     .other_options {
         width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
     .other_options svg {
@@ -283,7 +289,7 @@
     }
 
     .other_options p {
-        color: var(--grey-20, #EDEEF2);
+        color: #EDEEF2;
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
