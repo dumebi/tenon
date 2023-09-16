@@ -637,6 +637,29 @@
     gap: 0.875rem;
     cursor: pointer;
     width: 100%;
+    transition: all 0.3s ease;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+    /* Add a transition for the transform property */
+}
+
+.rotated {
+    transform: rotate(180deg);
+    /* Rotate the arrow when open */
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    /* Add a transition for max-height */
+}
+
+.open {
+    max-height: 200px;
+    /* Adjust the maximum height as needed */
 }
 
 .faq_header {
@@ -711,7 +734,7 @@
 
 /* Our story */
 
-.out_story_container {
+.our_story_container {
     width: 100%;
     margin: 0px auto;
     display: flex;
@@ -721,11 +744,17 @@
     align-content: center;
 }
 
-.out_story_container div {
+.our_story_container div {
     flex: 1;
 }
 
-.out_story_container div h1 {
+.our_story_container div:nth-child(2) {
+    gap: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.our_story_container div h1 {
     color: var(--dark-font-color);
     font-size: 3rem;
     font-style: normal;
@@ -733,7 +762,7 @@
     line-height: normal;
 }
 
-.out_story_container div p {
+.our_story_container div p {
     color: var(--dark-font-color);
     font-size: 1.5rem;
     font-style: normal;
@@ -1170,22 +1199,26 @@
 
     /* Our story  */
 
-    .out_story_container {
+    .our_story_container {
         flex-direction: column;
         padding: 0rem 1.5625rem;
         gap: 1.5rem;
     }
 
-    .out_story_container div {
+    .our_story_container div:nth-child(2) {
+        gap: 24px;
+    }
+
+    .our_story_container div {
         width: 100%;
     }
 
-    .out_story_container div h1 {
+    .our_story_container div h1 {
         font-size: 1.5rem;
         text-align: center;
     }
 
-    .out_story_container div p {
+    .our_story_container div p {
         font-size: 16px;
     }
 

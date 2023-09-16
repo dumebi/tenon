@@ -40,39 +40,29 @@ function About() {
 
       {/* Our story */}
 
-      <div className={styles.out_story_container}>
+      <div className={styles.our_story_container}>
         <div>
           <h1>Our story</h1>
         </div>
         <div>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Eget vulputate id cras
-            ultricies nulla cursus risus arcu. At morbi morbi purus feugiat sed
-            morbi sit mi. Ut a sit pulvinar eget. Vel elit lorem suspendisse
-            quis tortor nulla id. Turpis lacus viverra ut egestas rhoncus neque
-            id lobortis id. Viverra amet aliquet tempor maecenas sed risus ut
-            rhoncus massa. Sed nullam venenatis risus orci habitant eu. Viverra
-            at egestas urna tincidunt morbi mollis. Egestas erat et enim dictum.
-            Egestas maecenas a libero risus erat venenatis maecenas augue. Enim
-            convallis tristique sed egestas tortor. A vitae turpis rhoncus
-            vulputate massa erat sed habitant arcu. Amet enim dolor eu pharetra
-            sed lacus feugiat nunc. Quam sed id volutpat donec tellus nunc
-            turpis lacus tellus. Ac eget et dui viverra posuere. Ultricies
-            euismod sit vitae sem leo ultrices. Faucibus quam amet vulputate
-            iaculis ornare ut placerat auctor dapibus. Pellentesque adipiscing
-            nibh penatibus odio scelerisque enim. Sed pharetra amet urna quis
-            malesuada dolor vulputate commodo aliquet. Neque ut vitae tellus
-            penatibus vel dui gravida. Dictum sit mattis odio venenatis quam est
-            dui est. Etiam lorem adipiscing bibendum et aliquet mattis augue
-            facilisis. Tincidunt mus lectus non imperdiet curabitur faucibus
-            vel. Sed elit sit convallis morbi lacus non tellus. Diam morbi
-            feugiat nullam varius sit porttitor scelerisque mi non. Viverra nisl
-            tempor amet netus leo. Interdum ac viverra nulla pellentesque vitae
-            arcu. Sed ac nec tellus molestie nulla curabitur vel gravida.
-            Feugiat eget ultrices egestas nisi nec. Faucibus ornare mauris
-            tellus ipsum in ultrices enim dapibus tincidunt. Magna mauris ornare
-            aliquam ut leo massa in. Tortor lobortis arcu eu tellus quis ac
-            viverra.
+            Tenon Ventures was established on the 23rd Of October, 2018 with the
+            focus on trading and Logistics services. Tenon Ventures commenced
+            business operations in 2019 rendering logistics services in the FMCG
+            and Oil & Gas industries.
+          </p>
+          <p>
+            With the growth in the demand for its services and new business
+            prospect, Tenon Logistics Limited was incorporated as a Supply Chain
+            Management solutions service providing company.
+          </p>
+          <p>
+            We are a supply chain management solutions provider, delivering
+            excellent services to our diverse clientele. <br />
+            At Tenon Logistics, we pride ourselves in our commitment to
+            excellence. <br /> Our services are meticulously tailored to meet
+            the unique requirements of each client with the aim of enhancing
+            their business operations.
           </p>
         </div>
       </div>

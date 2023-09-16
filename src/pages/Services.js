@@ -78,9 +78,13 @@ function Services() {
             <div className={styles.services_text}>
               <h1>Logistics</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Viverra morbi etiam amet
-                tempor diam netus ultrices. Tempus vitae habitasse aliquet etiam
-                amet vitae pharetra. At tristique pellentesque.
+                Tenon Logistics operates a hybrid logistics model suitable for
+                movement of cargo in and out of the country as well as movements
+                within the country. This model enhances cargo delivery
+                efficiency as we take advantage of the vast and interwoven
+                network of water and land resources across the country. We
+                deploy the use of barges and trucks in the movement of cargos to
+                client designated location in a hybrid manner.
               </p>
               <div>
                 <Button>Book now</Button>
@@ -164,9 +168,11 @@ function Services() {
             <div className={styles.services_text}>
               <h1>Integrated Project Procurement</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Viverra morbi etiam amet
-                tempor diam netus ultrices. Tempus vitae habitasse aliquet etiam
-                amet vitae pharetra. At tristique pellentesque.
+                Given our specialty in procurement related activities, Tenon
+                Logistics specializes in seamless and timely procurement and
+                delivery of cost efficient and fit for purpose materials and
+                equipments from reputable global and local brands with keen
+                interest in quality to our clients.
               </p>
               <div>
                 <Button>Book now</Button>
@@ -233,9 +239,11 @@ function Services() {
             <div className={styles.services_text}>
               <h1>Warehousing</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Viverra morbi etiam amet
-                tempor diam netus ultrices. Tempus vitae habitasse aliquet etiam
-                amet vitae pharetra. At tristique pellentesque.
+                Our warehouses are located at prime business locations and at
+                areas close to business districts. Clients no longer have to
+                worry about the delivery of cargos when stored with us as we
+                deliver the cargos to the designated client location subject to
+                contract.
               </p>
               <div>
                 <Button>Book now</Button>

@@ -18,7 +18,6 @@ function Navbar() {
           </div>
         </div>
       </NavLink>
-
       {/* hamburger icon */}
       <div
         className={styles.hamburger_wrapper}
@@ -55,66 +54,61 @@ function Navbar() {
           <p>Menu</p>
         </Button>
       </div>
-
       {/* Mobile menu */}
-
-      {openMenu && (
-        <div
-          className={`${styles.mobile_menu} ${
-            openMenu ? `${styles.open}` : ""
-          }`}
-        >
-          <div className={styles.mobile_menu_header}>
-            <NavLink to="/">
-              <div className={styles.navbar_logo}>
-                <div className={styles.navbar_logo_wrapper}>
-                  <img src={logo} alt="logo" />
-                </div>
+      {/* {openMenu && ( */}
+      <div
+        className={`${styles.mobile_menu} ${openMenu ? `${styles.open}` : ""}`}
+      >
+        <div className={styles.mobile_menu_header}>
+          <NavLink to="/">
+            <div className={styles.navbar_logo}>
+              <div className={styles.navbar_logo_wrapper}>
+                <img src={logo} alt="logo" />
               </div>
-            </NavLink>
+            </div>
+          </NavLink>
 
-            <svg
-              onClick={closeMenuHandler}
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_203_12480)">
-                <path
-                  d="M12.0002 11.3289L16.9502 6.37891L18.3642 7.79291L13.4142 12.7429L18.3642 17.6929L16.9502 19.1069L12.0002 14.1569L7.05023 19.1069L5.63623 17.6929L10.5862 12.7429L5.63623 7.79291L7.05023 6.37891L12.0002 11.3289Z"
-                  fill="#3E414C"
+          <svg
+            onClick={closeMenuHandler}
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_203_12480)">
+              <path
+                d="M12.0002 11.3289L16.9502 6.37891L18.3642 7.79291L13.4142 12.7429L18.3642 17.6929L16.9502 19.1069L12.0002 14.1569L7.05023 19.1069L5.63623 17.6929L10.5862 12.7429L5.63623 7.79291L7.05023 6.37891L12.0002 11.3289Z"
+                fill="#3E414C"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_203_12480">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(0 0.743164)"
                 />
-              </g>
-              <defs>
-                <clipPath id="clip0_203_12480">
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="white"
-                    transform="translate(0 0.743164)"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-
-          <NavLink to="/services">Services</NavLink>
-          <NavLink to="/about-us">About us</NavLink>
-          <NavLink to="/contact-us">Contact us</NavLink>
-
-          <div className={styles.mobile_auth}>
-            <Link to="/login">
-              <Button className={styles.mobile_auth_login}>Log in</Button>
-            </Link>
-            <Link to="/sign-up">
-              <Button>Sign up</Button>
-            </Link>
-          </div>
+              </clipPath>
+            </defs>
+          </svg>
         </div>
-      )}
 
+        <NavLink to="/services">Services</NavLink>
+        <NavLink to="/about-us">About us</NavLink>
+        <NavLink to="/contact-us">Contact us</NavLink>
+
+        <div className={styles.mobile_auth}>
+          <Link to="/login">
+            <Button className={styles.mobile_auth_login}>Log in</Button>
+          </Link>
+          <Link to="/sign-up">
+            <Button>Sign up</Button>
+          </Link>
+        </div>
+      </div>
+      {/* // )} */}
       <ul>
         <li>
           <NavLink

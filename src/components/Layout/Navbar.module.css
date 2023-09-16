@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: var(--box-shadow);
-    z-index: 10;
+    z-index: 100;
 }
 
 .navbar_logo {
@@ -105,6 +105,7 @@ ul li .active {
 
     .hamburger_wrapper {
         display: block;
+        z-index: 100;
         width: 5.4375em;
     }
 
@@ -124,14 +125,16 @@ ul li .active {
         align-items: flex-start;
         gap: 1rem;
         background-color: var(--background-color);
-        box-shadow: var(--box-shadow);
+        max-height: 0;
         overflow: hidden;
-        height: 0;
-        transition: height 0.3s ease-in-out;
+        transition: max-height 0.3s ease-in-out;
     }
 
-    .mobile_menu.open {
-        height: auto;
+    .open {
+        /* display: flex; */
+        z-index: 1000;
+        box-shadow: var(--box-shadow);
+        max-height: 43.75em;
     }
 
     .mobile_menu_header {

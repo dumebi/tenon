@@ -1,5 +1,5 @@
 .tc {
-    margin-top: 8.2rem;
+    margin: 8.2rem 0px;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -57,12 +57,29 @@
     line-height: normal;
 }
 
-.tc_inner p {
+.tc_inner p,
+.tc_inner li {
     color: var(--dark-font-color);
     font-size: 1.125rem;
     font-style: normal;
     font-weight: var(--light-font-weight);
     line-height: normal;
+}
+
+.tc_inner span {
+    font-weight: var(--medium-font-weight);
+}
+
+.tc_inner h3 {
+    color: var(--dark-font-color);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
+.tc_inner li {
+    margin-left: 1.5rem;
 }
 
 .faq {
@@ -82,6 +99,29 @@
     gap: 0.875rem;
     cursor: pointer;
     width: 100%;
+    transition: all 0.3s ease;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+    /* Add a transition for the transform property */
+}
+
+.rotated {
+    transform: rotate(180deg);
+    /* Rotate the arrow when open */
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    /* Add a transition for max-height */
+}
+
+.open {
+    max-height: 200px;
+    /* Adjust the maximum height as needed */
 }
 
 .faq_header {
@@ -112,7 +152,7 @@
 
 @media only screen and (max-width: 920px) {
     .tc {
-        margin-top: 3.375rem;
+        margin: 3.375rem 0px;
         gap: 1.5rem;
     }
 
@@ -147,9 +187,15 @@
         font-size: 1.125rem;
     }
 
-    .tc_inner p {
+    .tc_inner p,
+    .tc_inner li {
         font-size: 0.875rem;
     }
+
+    .tc_inner h3 {
+        font-size: 0.875rem;
+    }
+
 
     .faq {
         padding: 1.875rem;

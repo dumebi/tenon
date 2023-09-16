@@ -3,140 +3,15 @@ import styles from "./Hero.module.css";
 import Flickity from "flickity";
 import "flickity/css/flickity.css";
 import Card from "../UI/Card";
-import solutionIcon from "../../assets/svg/Solution.svg";
-import communicationIcon from "../../assets/svg/Communication.svg";
-import timerIcon from "../../assets/svg/Timer.svg";
-import globalIcon from "../../assets/svg/Global.svg";
-import bikeIcon from "../../assets/svg/Bike.svg";
-import freightIcon from "../../assets/svg/Freight.svg";
-import procurementIcon from "../../assets/svg/Product-procurement.svg";
-import haulageIcon from "../../assets/svg/Haulage.svg";
-import warehouseIcon from "../../assets/svg/warehousing.svg";
-import manImg from "../../assets/smilling-man.png";
-import Button from "../UI/Button";
+// import manImg from "../../assets/smilling-man.png";
+// import Button from "../UI/Button";
 import Partners from "../Layout/Partners";
 import "../../App.css";
-
-const tenon_about = [
-  {
-    header: "One-Stop Solution",
-    svg: solutionIcon,
-    text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-  },
-  {
-    header: "Great customer experience",
-    svg: communicationIcon,
-    text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-  },
-  {
-    header: "Real time reporting",
-    svg: timerIcon,
-    text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-  },
-  {
-    header: "Global solutions",
-    svg: globalIcon,
-    text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-  },
-];
-
-const tenon_features = [
-  {
-    header: "Freight forwarding",
-    svg: freightIcon,
-    card_info: {
-      svg: bikeIcon,
-      header: "Logistics",
-      text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-    },
-    detailedInfo: {
-      header: "Air freight",
-      text: "With a relentless focus on efficiency, reliability,",
-      header_two: "Ocean freight",
-      text_two: "With a relentless focus on efficiency, reliability,",
-    },
-  },
-
-  {
-    header: "Haulage",
-    svg: haulageIcon,
-    card_info: {
-      svg: procurementIcon,
-      header: "Integrated project procurement",
-      text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-    },
-    detailedInfo: {
-      header: "Barging",
-      text: "With a relentless focus on efficiency, reliability,",
-      header_two: "Trucking",
-      text_two: "With a relentless focus on efficiency, reliability,",
-    },
-  },
-
-  {
-    header: "Haulage",
-    svg: haulageIcon,
-    card_info: {
-      svg: warehouseIcon,
-      header: "Warehousing",
-      text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-    },
-  },
-];
-
-const rateOptions = [
-  "MSC",
-  "MSC",
-  "MSC",
-  "MSC",
-  "MSC",
-  "MSC",
-  "MSC",
-  "MSC",
-  "MSC",
-];
-
-const faqData = [
-  {
-    question: "How long does it take to ship my order?",
-    answer:
-      "Orders are usually shipped within 1-2 business days after placing the order.",
-  },
-  {
-    question: "What payment methods do you accept?",
-    answer:
-      "Orders are usually shipped within 1-2 business days after placing the order.",
-  },
-  {
-    question: "What payment methods do you accept?",
-    answer:
-      "Orders are usually shipped within 1-2 business days after placing the order.",
-  },
-  {
-    question: "How long does it take to ship my order?",
-    answer:
-      "Orders are usually shipped within 1-2 business days after placing the order.",
-  },
-  {
-    question: "What payment methods do you accept?",
-    answer:
-      "Orders are usually shipped within 1-2 business days after placing the order.",
-  },
-  {
-    question: "How long does it take to ship my order?",
-    answer:
-      "Orders are usually shipped within 1-2 business days after placing the order.",
-  },
-  {
-    question: "What payment methods do you accept?",
-    answer:
-      "Orders are usually shipped within 1-2 business days after placing the order.",
-  },
-];
+import { Arrays } from "../../utils/Arrays";
 
 function HomeBody() {
-  const [activeShippingRate, setActiveShippingRate] = useState("container");
-  const [activeOptionRate, setActiveOptionRate] = useState(0);
+  // const [activeShippingRate, setActiveShippingRate] = useState("container");
+  // const [activeOptionRate, setActiveOptionRate] = useState(0);
   const [openQuestion, setOpenQuestion] = useState(null);
 
   const flickityRef = useRef(null);
@@ -156,13 +31,13 @@ function HomeBody() {
     return () => flickityRef.current.destroy();
   }, []);
 
-  const handleParagraphClick = (paragraphId) => {
-    setActiveShippingRate(paragraphId);
-  };
+  // const handleParagraphClick = (paragraphId) => {
+  //   setActiveShippingRate(paragraphId);
+  // };
 
-  const handleRateOptionIndex = (index) => {
-    setActiveOptionRate(index);
-  };
+  // const handleRateOptionIndex = (index) => {
+  //   setActiveOptionRate(index);
+  // };
 
   // Function to handle question clicks
   const handleQuestionClick = (index) => {
@@ -190,7 +65,7 @@ function HomeBody() {
             </div>
           </div>
           <div className={styles.body_about_cards}>
-            {tenon_about.map((data, index) => (
+            {Arrays.tenon_about.map((data, index) => (
               <Card className={styles.card} key={index}>
                 <div className={styles.svg_wrapper}>
                   <img src={data.svg} alt={data.header} />
@@ -215,7 +90,7 @@ function HomeBody() {
             </p>
           </div>
           <div className={styles.body_features_main}>
-            {tenon_features.map((data, index) => (
+            {Arrays.tenon_features.map((data, index) => (
               <div className={styles.body_features_main_wrapper} key={index}>
                 <Card className={styles.body_features_main_first_card}>
                   <div className={styles.svg_wrapper}>
@@ -278,7 +153,7 @@ function HomeBody() {
         </div>
       </div>
       {/* Shipping rates */}
-      <div className={styles.body_features}>
+      {/* <div className={styles.body_features}>
         <div className={styles.body_features_inner}>
           <div className={styles.body_features_header}>
             <h1>Shipping rates</h1>
@@ -323,7 +198,7 @@ function HomeBody() {
             </div>
 
             <div className={styles.rateOptions}>
-              {rateOptions.map((data, index) => (
+              {Arrays.rateOptions.map((data, index) => (
                 <div
                   className={
                     activeOptionRate === index
@@ -340,7 +215,7 @@ function HomeBody() {
           </div>
 
           <div className={styles.rates_card_wrapper}>
-            {rateOptions.map((data) => (
+            {Arrays.rateOptions.map((data) => (
               <Card className={styles.ratesCard} key={data}>
                 <div className={styles.rates_card_header}>
                   <p>CompanyName</p>
@@ -371,7 +246,7 @@ function HomeBody() {
             <Button>See more</Button>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* partners */}
       <Partners />
 
@@ -425,68 +300,39 @@ function HomeBody() {
             </div>
           </div>
           <div className={styles.faq}>
-            {faqData.map((data, index) => (
+            {Arrays.faqData.map((data, index) => (
               <div
-                className={styles.faq_list}
+                className={`${styles.faq_list} ${
+                  openQuestion === index ? styles.open : ""
+                }`}
                 key={index}
                 onClick={() => handleQuestionClick(index)}
               >
                 <div className={styles.faq_header}>
                   <h1>{data.question}</h1>
-                  {openQuestion === index ? (
-                    <svg
-                      onClick={() => handleQuestionClick(null)}
-                      width="25"
-                      height="25"
-                      viewBox="0 0 25 25"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_41_1618)">
-                        <path
-                          d="M12.5486 11.0487L7.59857 15.9987L6.18457 14.5847L12.5486 8.2207L18.9126 14.5847L17.4986 15.9987L12.5486 11.0487Z"
-                          fill="white"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_41_1618">
-                          <rect
-                            width="24"
-                            height="24"
-                            fill="white"
-                            transform="translate(0.548828 0.220703)"
-                          />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  ) : (
-                    <svg
-                      width="25"
-                      height="25"
-                      viewBox="0 0 25 25"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_41_1622)">
-                        <path
-                          d="M12.5486 13.3929L17.4986 8.44287L18.9126 9.85687L12.5486 16.2209L6.18457 9.85687L7.59857 8.44287L12.5486 13.3929Z"
-                          fill="white"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_41_1622">
-                          <rect
-                            width="24"
-                            height="24"
-                            fill="white"
-                            transform="translate(0.548828 0.220703)"
-                          />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  )}
+                  <svg
+                    className={`${styles.arrow} ${
+                      openQuestion === index ? styles.rotated : ""
+                    }`}
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5486 13.3929L17.4986 8.44287L18.9126 9.85687L12.5486 16.2209L6.18457 9.85687L7.59857 8.44287L12.5486 13.3929Z"
+                      fill="white"
+                    />
+                  </svg>
                 </div>
-                {openQuestion === index && <p>{data.answer}</p>}
+                <p
+                  className={`${styles.answer} ${
+                    openQuestion === index ? styles.open : ""
+                  }`}
+                >
+                  {data.answer}
+                </p>
               </div>
             ))}
           </div>
@@ -498,10 +344,10 @@ function HomeBody() {
         <h1>Our Gallery:</h1>
         <div className={styles.carousel_container}>
           <div className="carousel">
-            {rateOptions.map((index) => (
+            {Arrays.gallery_images.map((data, index) => (
               <div className={styles.gallery_img} key={index}>
                 <div className={styles.gallery_wrapper}>
-                  <img src={manImg} alt="gallery" />
+                  <img src={data} alt="gallery" />
                 </div>
               </div>
             ))}
