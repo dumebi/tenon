@@ -3,9 +3,9 @@ import styles from "./Hero.module.css";
 import heroImage from "../../assets/about-hero.png";
 import Partners from "../Layout/Partners";
 import Card from "../UI/Card";
-import teamImg from "../../assets/avatar1.png";
+// import teamImg from "../../assets/avatar1.png";
 
-const rateOptions = ["MSC", "MSC", "MSC", "MSC", "MSC", "MSC", "MSC", "MSC"];
+// const rateOptions = ["MSC", "MSC", "MSC", "MSC", "MSC", "MSC", "MSC", "MSC"];
 
 const items = Array.from({ length: 4 });
 
