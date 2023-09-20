@@ -68,7 +68,7 @@ function About() {
       </div>
 
       {/* Team */}
-      <div className={styles.team}>
+      {/* <div className={styles.team}>
         <div className={styles.team_inner}>
           <div className={styles.body_features_header}>
             <h1>Meet the team</h1>
@@ -102,7 +102,7 @@ function About() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Partners */}
       <Partners />
