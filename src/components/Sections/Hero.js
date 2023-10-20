@@ -12,7 +12,7 @@ import company6 from "../../assets/image 6.png";
 
 function Hero() {
   const phrases = useMemo(
-    () => ["Warehousing", "Supply chain", "Freight forwarding"],
+    () => ["Supply chain", "Supply chain", "Supply chain"],
     []
   );
   const [currentPhrase, setCurrentPhrase] = useState(phrases[0]);
@@ -38,7 +38,7 @@ function Hero() {
         setPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
         setCurrentPhrase(phrases[phraseIndex]);
         setIsHidden(false);
-      }, 500);
+      }, 1000);
     }, 800);
 
     return () => clearInterval(interval);
@@ -64,12 +64,7 @@ function Hero() {
               </h1>
             </div>
             <div>
-              <p>
-                With a relentless focus on efficiency, reliability, and
-                innovation, we specialize in optimizing warehouses and logistics
-                operations to drive unparalleled success for businesses of all
-                sizes.{" "}
-              </p>
+              <p>Discover the Tenon Logistics difference!</p>
             </div>
 
             <Link to="/services">

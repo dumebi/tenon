@@ -5,6 +5,7 @@ import "flickity/css/flickity.css";
 import Card from "../UI/Card";
 // import manImg from "../../assets/smilling-man.png";
 // import Button from "../UI/Button";
+import freightImg from "../../assets/freight.png";
 import Partners from "../Layout/Partners";
 import "../../App.css";
 import { Arrays } from "../../utils/Arrays";
@@ -54,7 +55,7 @@ function HomeBody() {
       <div className={`${styles.hero} ${styles.body}`}>
         <div className={styles.body_about_parent}>
           <div className={styles.body_about}>
-            <div>
+            <div className={styles.body_about_header}>
               <h1>Going beyond ordinary for your business</h1>
               <p>
                 With a relentless focus on efficiency, reliability, and
@@ -116,15 +117,39 @@ function HomeBody() {
                         <p>{data.detailedInfo.text}</p>
                       </div>
 
-                      <div
+                      {/* <div
                         className={
                           styles.body_features_main_second_card_inner_second
                         }
+                      > */}
+                      <svg
+                        width="2"
+                        height="196"
+                        viewBox="0 0 2 146"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
+                        <line
+                          x1="1.04883"
+                          y1="0.220703"
+                          x2="1.04883"
+                          y2="145.221"
+                          stroke="#DCDEE6"
+                        />
+                      </svg>
+
+                      <div
+                        className={styles.body_features_main_second_card_text}
+                      >
+                        <p>{data.detailedInfo.header_two}</p>
+                        <p>{data.detailedInfo.text_two}</p>
+                      </div>
+
+                      {data.detailedInfo.header_three && (
                         <svg
                           width="2"
-                          height="82"
-                          viewBox="0 0 2 82"
+                          height="196"
+                          viewBox="0 0 2 146"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                         >
@@ -132,18 +157,24 @@ function HomeBody() {
                             x1="1.04883"
                             y1="0.220703"
                             x2="1.04883"
-                            y2="81.2207"
+                            y2="145.221"
                             stroke="#DCDEE6"
                           />
                         </svg>
+                      )}
+                      {data.detailedInfo.header_three && (
                         <div
                           className={styles.body_features_main_second_card_text}
                         >
-                          <p>{data.detailedInfo.header_two}</p>
-                          <p>{data.detailedInfo.text_two}</p>
+                          <p>{data.detailedInfo.header_three}</p>
+                          <p>{data.detailedInfo.text_three}</p>
+                          <p style={{ color: "#782F11", fontSize: "12px" }}>
+                            Coming soon
+                          </p>
                         </div>
-                      </div>
+                      )}
                     </div>
+                    {/* </div> */}
                     <p>Learn more</p>
                   </Card>
                 )}
@@ -152,6 +183,76 @@ function HomeBody() {
           </div>
         </div>
       </div>
+
+      <div className={`${styles.hero} ${styles.body}`}>
+        <div className={styles.body_about_parent}>
+          <div className={styles.body_about}>
+            <div className={styles.body_about_header}>
+              <h1>Our Commitment </h1>
+              <p>
+                At Tenon Logistics, we pride ourselves on being pioneers of
+                innovation and excellence in the industry. We offer: 
+              </p>
+            </div>
+          </div>
+          <div className={styles.body_about_cards}>
+            {Arrays.tenon_commitment.map((data, index) => (
+              <Card className={styles.card} key={index}>
+                <div className={styles.svg_wrapper}>
+                  <img src={data.svg} alt={data.header} />
+                </div>
+                <p>{data.header}</p>
+                <p>{data.text}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Reach */}
+      <div className={styles.reach}>
+        <div className={styles.service_wrapper}>
+          <div className={styles.services_text}>
+            <h1>Our Reach</h1>
+            <p>
+              Tenon Logistics Limited extends its services to clients across
+              various industries within Nigeria and the broader sub-Saharan
+              African region. We are your trusted partner for navigating the
+              complexities of supply chain management. 
+            </p>
+          </div>
+          <div className={styles.services_info_images}>
+            <div className={styles.services_images_inner}>
+              <div className={styles.services_images_wrapper}>
+                <img src={freightImg} alt="service" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.service_wrapper}>
+          <div className={styles.services_text}>
+            <h1>Customer Satisfaction </h1>
+            <p>
+              Our unwavering commitment to customer satisfaction drives us. We
+              believe that our success is intrinsically tied to the success and
+              satisfaction of our clients.
+            </p>
+            <p>
+              Discover the Tenon Logistics difference - where innovation meets
+              reliability, and where client success is our utmost priority.
+            </p>
+          </div>
+          <div className={styles.services_info_images}>
+            <div className={styles.services_images_inner}>
+              <div className={styles.services_images_wrapper}>
+                <img src={freightImg} alt="service" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Shipping rates */}
       {/* <div className={styles.body_features}>
         <div className={styles.body_features_inner}>
@@ -251,11 +352,10 @@ function HomeBody() {
       <Partners />
 
       {/* data driven section */}
-
       <div className={`${styles.hero} ${styles.body2}`}>
         <div className={styles.body_about_parent}>
           <div className={styles.body_about}>
-            <div>
+            <div className={styles.body_about_header}>
               <h1>We are a data driven organization</h1>
               <p>
                 With a relentless focus on efficiency, reliability, and
@@ -267,12 +367,12 @@ function HomeBody() {
           </div>
           <div className={styles.body_about_cards}>
             <Card className={styles.data_card}>
-              <h1>30 billion</h1>
+              <h1>29,431 MT</h1>
               <p>Total cargo handled</p>
             </Card>
             <Card className={styles.data_card}>
-              <h1>$59,000,000</h1>
-              <p>Value of cargo handled</p>
+              <h1>865</h1>
+              <p>Trucking operations executed</p>
             </Card>
             <Card className={styles.data_card}>
               <h2>Total man hours -</h2>

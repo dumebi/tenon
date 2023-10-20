@@ -187,6 +187,7 @@
     text-align: center;
     font-size: 1.125rem;
     font-style: normal;
+    width: 756px;
     font-weight: var(--light-font-weight);
     line-height: normal;
 }
@@ -201,7 +202,7 @@
 .freight_card {
     display: flex;
     width: 25.041875em;
-    height: 30.5em;
+    height: 538px;
     padding: 1.875rem 1.25rem;
     flex-direction: column;
     align-items: flex-start;
@@ -254,6 +255,24 @@
 
 .button {
     background-color: #02292D;
+}
+
+.btn {
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 8px;
+    background: var(--secondary-10, #FCDFD3);
+}
+
+.btn p {
+    color: var(--secondary-80, #782F11);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 
@@ -342,6 +361,7 @@
 
     .second_service_header p {
         font-size: 14px;
+        width: 100%;
     }
 
     .second_service_freight_list {

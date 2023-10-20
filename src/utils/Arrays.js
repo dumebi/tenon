@@ -14,15 +14,28 @@ import image4 from "../assets/gallery/image3.png";
 import image5 from "../assets/gallery/image4.png";
 import image6 from "../assets/gallery/image5.png";
 import image7 from "../assets/gallery/image6.png";
+import service1 from "../assets/service1.png";
+import service2 from "../assets/service2.png";
+import service3 from "../assets/service3.png";
+import service4 from "../assets/service4.png";
+import service5 from "../assets/service5.png";
+import service6 from "../assets/service6.png";
+import service7 from "../assets/service7.png";
+import service8 from "../assets/service8.png";
 
 export const Arrays = {
   gallery_images: [image1, image2, image3, image4, image5, image6, image7],
+  service_images: [
+    service4,
+    service8,
+    service1,
+    service3,
+    service7,
+    service5,
+    service6,
+    service2,
+  ],
   tenon_about: [
-    {
-      header: "One-Stop Solution",
-      svg: solutionIcon,
-      text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-    },
     {
       header: "Great customer experience",
       svg: communicationIcon,
@@ -40,6 +53,29 @@ export const Arrays = {
     },
   ],
 
+  tenon_commitment: [
+    {
+      header: "Fast and Flexible Solutions",
+      svg: solutionIcon,
+      text: "Our services are designed to adapt to your evolving needs. ",
+    },
+    {
+      header: "Cost-Optimized Approaches",
+      svg: communicationIcon,
+      text: "We prioritize efficiency without compromising quality. ",
+    },
+    {
+      header: "Bespoke Solutions",
+      svg: timerIcon,
+      text: "Tailored to your unique requirements. ",
+    },
+    {
+      header: "User-Friendly Experience",
+      svg: globalIcon,
+      text: "We ensure that working with us is straightforward and seamless.",
+    },
+  ],
+
   tenon_features: [
     {
       header: "Freight forwarding",
@@ -47,13 +83,17 @@ export const Arrays = {
       card_info: {
         svg: bikeIcon,
         header: "Logistics",
-        text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
+        text: "Tenon Logistics operates a hybrid logistics model suitable for movement of cargo in and out of the country as well as movements within the country. This model enhances cargo delivery efficiency as we take advantage of the vast and interwoven network of water and land resources across the country.",
       },
       detailedInfo: {
         header: "Air freight",
-        text: "With a relentless focus on efficiency, reliability,",
+        text: "Tenon Logistics works with carefully selected airlines with world class services for cargo delivery thus ensuring that deadlines for project executions are met with a team of dedicated logistics experts monitoring the entire process.  ",
         header_two: "Ocean freight",
-        text_two: "With a relentless focus on efficiency, reliability,",
+        text_two:
+          "Our company delights in ensuring that client cargos are shipped timely and efficiently in manners that do not add extra cost to the client by working with world class shipping lines regionally and globally.  ",
+        header_three: "Rail freight",
+        text_three:
+          "Tenon Logistics operates various hybrid logistics solutions combining different solutions. We  aspire to latch onto the nations railway network for the movement of cargos across the nation upon regulatory approval.",
       },
     },
 
@@ -63,13 +103,14 @@ export const Arrays = {
       card_info: {
         svg: procurementIcon,
         header: "Integrated project procurement",
-        text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
+        text: "Given our specialty in procurement related activities, Tenon Logistics specializes in seamless and timely procurement and delivery of cost efficient and fit for purpose materials and equipments from reputable global and local brands with keen interest in quality to our clients.",
       },
       detailedInfo: {
         header: "Barging",
-        text: "With a relentless focus on efficiency, reliability,",
+        text: "Nigeria is blessed with vast waterways cutting across the entire nation thus making maritime transportation of bulk cargo using cargo suitable barges most desirable to our clients. Our team of expert marine transport personnel are deployed to ensure that cargo transportation is done safely and promptly through adequate stakeholder engagement. The barging model saves our client from exposure to claims for demurrage at ports.  ",
         header_two: "Trucking",
-        text_two: "With a relentless focus on efficiency, reliability,",
+        text_two:
+          "Taking advantage of our road networks, Tenon Logistics Limited has invested and acquired various types of trucks suitable for all kinds of cargo delivery with the supervision of our dedicated transportation team.  ",
       },
     },
 
@@ -79,7 +120,7 @@ export const Arrays = {
       card_info: {
         svg: warehouseIcon,
         header: "Warehousing",
-        text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
+        text: "Given our specialty in procurement related activities, Tenon Logistics specializes in seamless and timely procurement and delivery of cost efficient and fit for purpose materials and equipments from reputable global and local brands with keen interest in quality to our clients.",
       },
     },
   ],

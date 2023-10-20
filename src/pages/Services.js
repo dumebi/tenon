@@ -5,11 +5,9 @@ import Flickity from "flickity";
 import "flickity/css/flickity.css";
 import styles from "../components/Sections/Service.module.css";
 import Button from "../components/UI/Button";
-import serviceImg from "../assets/tenon_services.png";
 import freightImg from "../assets/freight.png";
 import Card from "../components/UI/Card";
-
-const items = Array.from({ length: 4 });
+import { Arrays } from "../utils/Arrays";
 
 function Services() {
   const flickityRef = useRef(null);
@@ -47,22 +45,16 @@ function Services() {
               Your <span>One-stop-shop</span> for all supply chain management
               solutions{" "}
             </h1>
-            <p>
-              With a relentless focus on efficiency, reliability, and
-              innovation, we specialize in optimizing warehouses and logistics
-              operations to drive unparalleled success for businesses of all
-              sizes.{" "}
-            </p>
             <div onClick={() => scrollToSection("#services")}>
               <Button>Explore services</Button>
             </div>
             <div className={styles.carousel_container}>
               <div className="service_carousel">
-                {items.map((index) => {
+                {Arrays.service_images.map((image, index) => {
                   return (
                     <div key={index} className={styles.service_images}>
                       <div className={styles.service_images_wrapper}>
-                        <img src={serviceImg} alt="services" />
+                        <img src={image} alt="services" />
                       </div>
                     </div>
                   );
@@ -118,9 +110,10 @@ function Services() {
                 </div>
                 <h1>Air freight</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Viverra morbi etiam
-                  amet tempor diam netus ultrices. Tempus vitae habitasse
-                  aliquet etiam amet vitae pharetra. At tristique pellentesque.
+                  Tenon Logistics works with carefully selected airlines with
+                  world class services for cargo delivery thus ensuring that
+                  deadlines for project executions are met with a team of
+                  dedicated logistics experts monitoring the entire process.  
                 </p>
                 <div>
                   <Button>Book now</Button>
@@ -135,9 +128,10 @@ function Services() {
                 </div>
                 <h1>Ocean freight</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Viverra morbi etiam
-                  amet tempor diam netus ultrices. Tempus vitae habitasse
-                  aliquet etiam amet vitae pharetra. At tristique pellentesque.
+                  Our company delights in ensuring that client cargos are
+                  shipped timely and efficiently in manners that do not add
+                  extra cost to the client by working with world class shipping
+                  lines regionally and globally.  
                 </p>
                 <div>
                   <Button>Book now</Button>
@@ -152,12 +146,13 @@ function Services() {
                 </div>
                 <h1>Rail freight</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Viverra morbi etiam
-                  amet tempor diam netus ultrices. Tempus vitae habitasse
-                  aliquet etiam amet vitae pharetra. At tristique pellentesque.
+                  Tenon Logistics operates various hybrid logistics solutions
+                  combining different solutions. We aspire to latch onto the
+                  nations railway network for the movement of cargos across the
+                  nation upon regulatory approval.
                 </p>
-                <div>
-                  <Button>Book now</Button>
+                <div className={styles.btn}>
+                  <p>Coming soon</p>
                 </div>
               </Card>
             </div>
@@ -192,8 +187,12 @@ function Services() {
             <div className={styles.second_service_header}>
               <h1>Haulage</h1>
               <p>
-                With a relentless focus on efficiency, reliability, and
-                innovation, we specialize in optimizing
+                Tenon logistics runs a dynamic hybrid haulage model combining
+                maritime transportation using barges and land transportation
+                using our trucks given the uniqueness of the Nigerian waterways
+                as they crisscross the vast lands of the country. This model has
+                been found suitable and efficient by our clients and is also
+                ranked the most preferred for bulk cargo delivery.  
               </p>
             </div>
 
@@ -206,9 +205,14 @@ function Services() {
                 </div>
                 <h1>Barging</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Viverra morbi etiam
-                  amet tempor diam netus ultrices. Tempus vitae habitasse
-                  aliquet etiam amet vitae pharetra. At tristique pellentesque.
+                  Nigeria is blessed with vast waterways cutting across the
+                  entire nation thus making maritime transportation of bulk
+                  cargo using cargo suitable barges most desirable to our
+                  clients. Our team of expert marine transport personnel are
+                  deployed to ensure that cargo transportation is done safely
+                  and promptly through adequate stakeholder engagement. The
+                  barging model saves our client from exposure to claims for
+                  demurrage at ports.  
                 </p>
                 <div>
                   <Button className={styles.button}>Book now</Button>
@@ -223,9 +227,10 @@ function Services() {
                 </div>
                 <h1>Trucking</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Viverra morbi etiam
-                  amet tempor diam netus ultrices. Tempus vitae habitasse
-                  aliquet etiam amet vitae pharetra. At tristique pellentesque.
+                  Taking advantage of our road networks, Tenon Logistics Limited
+                  has invested and acquired various types of trucks suitable for
+                  all kinds of cargo delivery with the supervision of our
+                  dedicated transportation team.  
                 </p>
                 <div>
                   <Button className={styles.button}>Book now</Button>

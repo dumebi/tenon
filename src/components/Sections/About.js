@@ -44,26 +44,24 @@ function About() {
         <div>
           <h1>Our story</h1>
         </div>
-        <div>
+        <div className={styles.our_story_container_inner}>
           <p>
-            Tenon Ventures was established on the 23rd Of October, 2018 with the
-            focus on trading and Logistics services. Tenon Ventures commenced
-            business operations in 2019 rendering logistics services in the FMCG
-            and Oil & Gas industries.
+            Established in 2022, Tenon Logistics Limited emerged as a natural
+            progression from the success achieved by Tenon Ventures. With a
+            strong foundation in trading and delivering logistics solutions
+            across diverse sectors, the demand for expanded services by our
+            clients drove our incorporation.
           </p>
-          <p>
-            With the growth in the demand for its services and new business
-            prospect, Tenon Logistics Limited was incorporated as a Supply Chain
-            Management solutions service providing company.
-          </p>
-          <p>
-            We are a supply chain management solutions provider, delivering
-            excellent services to our diverse clientele. <br />
-            At Tenon Logistics, we pride ourselves in our commitment to
-            excellence. <br /> Our services are meticulously tailored to meet
-            the unique requirements of each client with the aim of enhancing
-            their business operations.
-          </p>
+          <div className={styles.our_story_container_inner_text}>
+            <h3>One Stop Shop</h3>
+            <p>
+              Tenon Logistics Limited is a distinguished provider of end-to-end
+              Supply Chain Management services. Our professional integration
+              encompasses a comprehensive suite of offerings, including
+              Logistics, Warehousing, Haulage, Freight-Forwarding, and
+              Integrated Project Management.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -114,12 +112,6 @@ function About() {
           <div className={styles.body_about}>
             <div>
               <h1>Join our team</h1>
-              <p>
-                With a relentless focus on efficiency, reliability, and
-                innovation, we specialize in optimizing warehouses and logistics
-                operations to drive unparalleled success for businesses of all
-                sizes.
-              </p>
             </div>
           </div>
           <div className={styles.team_cards}>
