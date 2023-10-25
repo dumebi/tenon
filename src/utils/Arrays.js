@@ -24,7 +24,7 @@ import gallery7 from "../assets/gallery7.png";
 import gallery8 from "../assets/gallery8.png";
 import gallery9 from "../assets/gallery9.png";
 import service1 from "../assets/service1.png";
-import service2 from "../assets/service2.png";
+// import service2 from "../assets/service2.png";
 // import service3 from "../assets/service3.png";
 import service4 from "../assets/service4.png";
 import service5 from "../assets/service5.png";
