@@ -6,6 +6,13 @@ import "flickity/css/flickity.css";
 import styles from "../components/Sections/Service.module.css";
 import Button from "../components/UI/Button";
 import freightImg from "../assets/freight.png";
+import warehouse from "../assets/warehouse.png";
+import logistics from "../assets/logistics.png";
+import barging from "../assets/barging.png";
+import service6 from "../assets/service6.png";
+import air from "../assets/air-freight.png";
+import ocean from "../assets/ocean-freight.png";
+import rail from "../assets/rail-freight.png";
 import Card from "../components/UI/Card";
 import { Arrays } from "../utils/Arrays";
 
@@ -85,7 +92,7 @@ function Services() {
             <div className={styles.services_info_images}>
               <div className={styles.services_images_inner}>
                 <div className={styles.services_images_wrapper}>
-                  <img src={freightImg} alt="service" />
+                  <img src={logistics} alt="service" />
                 </div>
               </div>
             </div>
@@ -105,7 +112,7 @@ function Services() {
               <Card className={styles.freight_card}>
                 <div className={styles.freight_card_image}>
                   <div className={styles.freight_card_image_wrapper}>
-                    <img src={freightImg} alt="freight" />
+                    <img src={air} alt="freight" />
                   </div>
                 </div>
                 <h1>Air freight</h1>
@@ -123,7 +130,7 @@ function Services() {
               <Card className={styles.freight_card}>
                 <div className={styles.freight_card_image}>
                   <div className={styles.freight_card_image_wrapper}>
-                    <img src={freightImg} alt="freight" />
+                    <img src={ocean} alt="freight" />
                   </div>
                 </div>
                 <h1>Ocean freight</h1>
@@ -141,7 +148,7 @@ function Services() {
               <Card className={styles.freight_card}>
                 <div className={styles.freight_card_image}>
                   <div className={styles.freight_card_image_wrapper}>
-                    <img src={freightImg} alt="freight" />
+                    <img src={rail} alt="freight" />
                   </div>
                 </div>
                 <h1>Rail freight</h1>
@@ -200,7 +207,7 @@ function Services() {
               <Card className={styles.freight_card}>
                 <div className={styles.freight_card_image}>
                   <div className={styles.freight_card_image_wrapper}>
-                    <img src={freightImg} alt="freight" />
+                    <img src={barging} alt="freight" />
                   </div>
                 </div>
                 <h1>Barging</h1>
@@ -222,7 +229,7 @@ function Services() {
               <Card className={styles.freight_card}>
                 <div className={styles.freight_card_image}>
                   <div className={styles.freight_card_image_wrapper}>
-                    <img src={freightImg} alt="freight" />
+                    <img src={service6} alt="freight" />
                   </div>
                 </div>
                 <h1>Trucking</h1>
@@ -257,7 +264,7 @@ function Services() {
             <div className={styles.services_info_images}>
               <div className={styles.services_images_inner}>
                 <div className={styles.services_images_wrapper}>
-                  <img src={freightImg} alt="service" />
+                  <img src={warehouse} alt="service" />
                 </div>
               </div>
             </div>

@@ -197,7 +197,10 @@ function HomeBody() {
           </div>
           <div className={styles.body_about_cards}>
             {Arrays.tenon_commitment.map((data, index) => (
-              <Card className={styles.card} key={index}>
+              <Card
+                className={`${styles.second_card} ${styles.card}`}
+                key={index}
+              >
                 <div className={styles.svg_wrapper}>
                   <img src={data.svg} alt={data.header} />
                 </div>

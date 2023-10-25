@@ -14,42 +14,69 @@ import image4 from "../assets/gallery/image3.png";
 import image5 from "../assets/gallery/image4.png";
 import image6 from "../assets/gallery/image5.png";
 import image7 from "../assets/gallery/image6.png";
+import gallery1 from "../assets/gallery1.png";
+import gallery2 from "../assets/gallery2.png";
+import gallery3 from "../assets/gallery3.png";
+import gallery4 from "../assets/gallery4.png";
+// import gallery5 from "../assets/gallery5.png";
+import gallery6 from "../assets/gallery6.png";
+import gallery7 from "../assets/gallery7.png";
+import gallery8 from "../assets/gallery8.png";
+import gallery9 from "../assets/gallery9.png";
 import service1 from "../assets/service1.png";
 import service2 from "../assets/service2.png";
-import service3 from "../assets/service3.png";
+// import service3 from "../assets/service3.png";
 import service4 from "../assets/service4.png";
 import service5 from "../assets/service5.png";
 import service6 from "../assets/service6.png";
-import service7 from "../assets/service7.png";
+// import service7 from "../assets/service7.png";
 import service8 from "../assets/service8.png";
+import Akan from "../assets/Akan.png";
+import Juliet from "../assets/Juliet.png";
+import Seiya from "../assets/Seiya.png";
 
 export const Arrays = {
-  gallery_images: [image1, image2, image3, image4, image5, image6, image7],
+  gallery_images: [
+    image1,
+    image2,
+    image3,
+    gallery2,
+    gallery9,
+    gallery4,
+    gallery8,
+    image4,
+    image5,
+    image6,
+    image7,
+  ],
   service_images: [
     service4,
     service8,
     service1,
-    service3,
-    service7,
     service5,
     service6,
-    service2,
+    gallery2,
+    gallery1,
+    gallery3,
+    gallery6,
+    gallery7,
+    gallery9,
   ],
   tenon_about: [
     {
+      header: "Sustainable solutions",
+      svg: globalIcon,
+      text: "Our policy is to ensure that service solutions to our clients are in the best interest of the clients business objective and we are committed to this principle by the extent of research and stimulations we engage in before execution.",
+    },
+    {
       header: "Great customer experience",
       svg: communicationIcon,
-      text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
+      text: "We are committed to ensuring our clients have a great user experience as they engage our services and personnel.",
     },
     {
       header: "Real time reporting",
       svg: timerIcon,
-      text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
-    },
-    {
-      header: "Global solutions",
-      svg: globalIcon,
-      text: "With a relentless focus on efficiency, reliability, and innovation, we specialize in optimizing warehouses and logistics",
+      text: "As a company we place a very high value on integrity and transparency as such we ensure clients get real time reporting.",
     },
   ],
 
@@ -83,7 +110,7 @@ export const Arrays = {
       card_info: {
         svg: bikeIcon,
         header: "Logistics",
-        text: "Tenon Logistics operates a hybrid logistics model suitable for movement of cargo in and out of the country as well as movements within the country. This model enhances cargo delivery efficiency as we take advantage of the vast and interwoven network of water and land resources across the country.",
+        text: "Tenon Logistics operates a hybrid logistics model which combines various forms of transportation aimed at efficiently saving our clients time and costs.",
       },
       detailedInfo: {
         header: "Air freight",
@@ -103,14 +130,14 @@ export const Arrays = {
       card_info: {
         svg: procurementIcon,
         header: "Integrated project procurement",
-        text: "Given our specialty in procurement related activities, Tenon Logistics specializes in seamless and timely procurement and delivery of cost efficient and fit for purpose materials and equipments from reputable global and local brands with keen interest in quality to our clients.",
+        text: "Given our specialty in procurement related activities, Tenon Logistics provides seamless, timely and delivery of cost-efficient procurement services for all kinds of projects.",
       },
       detailedInfo: {
         header: "Barging",
-        text: "Nigeria is blessed with vast waterways cutting across the entire nation thus making maritime transportation of bulk cargo using cargo suitable barges most desirable to our clients. Our team of expert marine transport personnel are deployed to ensure that cargo transportation is done safely and promptly through adequate stakeholder engagement. The barging model saves our client from exposure to claims for demurrage at ports.  ",
+        text: "Our team of expert marine transport personnel are deployed to ensure that cargo transportation is executed safely and promptly through our  vast waters ways by barges and vessels.",
         header_two: "Trucking",
         text_two:
-          "Taking advantage of our road networks, Tenon Logistics Limited has invested and acquired various types of trucks suitable for all kinds of cargo delivery with the supervision of our dedicated transportation team.  ",
+          "Taking advantage of our road networks, Tenon Logistics Limited has invested in and acquired various types of trucks suitable for all kinds of cargo delivery with the supervision of our dedicated transportation team.",
       },
     },
 
@@ -120,7 +147,7 @@ export const Arrays = {
       card_info: {
         svg: warehouseIcon,
         header: "Warehousing",
-        text: "Given our specialty in procurement related activities, Tenon Logistics specializes in seamless and timely procurement and delivery of cost efficient and fit for purpose materials and equipments from reputable global and local brands with keen interest in quality to our clients.",
+        text: "Our warehouses are located at prime business locations and in areas close to business districts. Clients no longer have to worry about the safety and conditions of cargos when stored.",
       },
     },
   ],
@@ -162,6 +189,27 @@ export const Arrays = {
         "Can I list my asset under Tenon Logistics for trade Partnership?",
       answer:
         "Tenon Logistics welcomes all forms of profitable collaborations. We welcome the listing of assets such as Trucks, Warehouses, Jetties etc. subject to contract.",
+    },
+  ],
+
+  team: [
+    {
+      image: Akan,
+      name: "Akan Imoh",
+      position: "CEO",
+      bio: "Tenon Logistics is a supply chain Management Solutions services provider which renders services such as Logistics, Warehousing, Haulage, Freight-Forwarding, Customs Clearance and Integrated Project Management.",
+    },
+    {
+      image: Seiya,
+      name: "Seiya Imoh",
+      position: "CEO",
+      bio: "Tenon Logistics is a supply chain Management Solutions services provider which renders services such as Logistics, Warehousing, Haulage, Freight-Forwarding, Customs Clearance and Integrated Project Management.",
+    },
+    {
+      image: Juliet,
+      name: "Juliet Odumosu",
+      position: "CEO",
+      bio: "Tenon Logistics is a supply chain Management Solutions services provider which renders services such as Logistics, Warehousing, Haulage, Freight-Forwarding, Customs Clearance and Integrated Project Management.",
     },
   ],
 };

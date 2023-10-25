@@ -191,7 +191,6 @@
 
 .body_about_cards {
     width: 47em;
-    flex: 1;
     justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;
@@ -209,8 +208,16 @@
 .card {
     display: flex;
     background-color: var(--primary-color);
-    width: 21.625em;
+    width: 22.875em;
     height: 14.25em;
+}
+
+.card:nth-child(1) {
+    width: 47em;
+}
+
+.second_card:nth-child(1) {
+    width: 22.875em;
 }
 
 .svg_wrapper {
@@ -894,6 +901,7 @@
 }
 
 .team_inner {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -908,9 +916,11 @@
 
 .team_profile_card {
     display: flex;
+    flex: 1;
     width: 18.4375em;
     padding: 1rem;
-    height: 33.0625em;
+    /* height: 33.0625em; */
+    height: auto;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 1.25rem;
@@ -920,7 +930,7 @@
 
 .team_image {
     display: flex;
-    height: 17.375em;
+    height: 28em;
     width: 100%;
     align-self: center;
 }
@@ -935,6 +945,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    object-position: center;
 }
 
 .team_info {
@@ -1201,6 +1212,13 @@
 
     .body_features_main_first_card {
         width: 100%;
+    }
+
+    .body_features_main_first_card p:nth-child(3) {
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: var(--light-font-weight);
+        line-height: normal;
     }
 
     .body_features_main_second_card {

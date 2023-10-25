@@ -3,9 +3,7 @@ import styles from "./Hero.module.css";
 import heroImage from "../../assets/about-hero.png";
 import Partners from "../Layout/Partners";
 import Card from "../UI/Card";
-// import teamImg from "../../assets/avatar1.png";
-
-// const rateOptions = ["MSC", "MSC", "MSC", "MSC", "MSC", "MSC", "MSC", "MSC"];
+import { Arrays } from "../../utils/Arrays";
 
 const items = Array.from({ length: 4 });
 
@@ -22,10 +20,8 @@ function About() {
             </div>
             <div>
               <p>
-                With a relentless focus on efficiency, reliability, and
-                innovation, we specialize in optimizing warehouses and logistics
-                operations to drive unparalleled success for businesses of all
-                sizes.{" "}
+                You are welcome to experience the Tenon Logistics way of problem
+                solving.
               </p>
             </div>
           </div>
@@ -59,14 +55,14 @@ function About() {
               Supply Chain Management services. Our professional integration
               encompasses a comprehensive suite of offerings, including
               Logistics, Warehousing, Haulage, Freight-Forwarding, and
-              Integrated Project Management.
+              Integrated Project Procurement.
             </p>
           </div>
         </div>
       </div>
 
       {/* Team */}
-      {/* <div className={styles.team}>
+      <div className={styles.team}>
         <div className={styles.team_inner}>
           <div className={styles.body_features_header}>
             <h1>Meet the team</h1>
@@ -78,16 +74,16 @@ function About() {
             </p>
           </div>
           <div className={styles.team_list}>
-            {rateOptions.map((index) => (
+            {Arrays.team?.map((data, index) => (
               <Card key={index} className={styles.team_profile_card}>
                 <div className={styles.team_image}>
                   <div className={styles.team_image_wrapper}>
-                    <img src={teamImg} alt="Team" />
+                    <img src={data.image} alt="Team" />
                   </div>
                 </div>
                 <div className={styles.team_info}>
-                  <h1>Verna Droubay</h1>
-                  <p>CEO</p>
+                  <h1>{data.name}</h1>
+                  <p>{data.position}</p>
                   <p>
                     Lorem ipsum dolor sit amet consectetur. Malesuada tortor
                     auctor dictum egestas amet ac tincidunt dignissim. Sed diam
@@ -100,7 +96,7 @@ function About() {
             ))}
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Partners */}
       <Partners />
