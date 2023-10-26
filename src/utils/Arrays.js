@@ -18,13 +18,13 @@ import gallery1 from "../assets/gallery1.png";
 import gallery2 from "../assets/gallery2.png";
 import gallery3 from "../assets/gallery3.png";
 import gallery4 from "../assets/gallery4.png";
-// import gallery5 from "../assets/gallery5.png";
+import gallery10 from "../assets/gallery10.png";
 import gallery6 from "../assets/gallery6.png";
 import gallery7 from "../assets/gallery7.png";
 import gallery8 from "../assets/gallery8.png";
 import gallery9 from "../assets/gallery9.png";
 import service1 from "../assets/service1.png";
-// import service2 from "../assets/service2.png";
+import gallery11 from "../assets/gallery11.png";
 // import service3 from "../assets/service3.png";
 import service4 from "../assets/service4.png";
 import service5 from "../assets/service5.png";
@@ -45,8 +45,10 @@ export const Arrays = {
     gallery9,
     gallery4,
     gallery8,
+    gallery10,
     image4,
     image5,
+    gallery11,
     image6,
     image7,
   ],
@@ -198,19 +200,19 @@ export const Arrays = {
       image: Seiya,
       name: "Tamaramieseiya Sammy",
       position: "Co-Founder and Managing Director",
-      bio: "Tamaramieseiya Sammy is a seasoned Human Resources practitioner who also holds a Law degree from the University of Buckingham. Prior to the assumption of her role at Tenon Logistics, she worked at Duport Marine Limited as Manager, External Affairs and Human Resources after which she proceeded to Africa Terminals Limited where she worked as the Manager, Corporate (Business Integrity/Compliance, Legal Services and Human Capital Management) Services. She is Co-Founder and Managing Director of Tenon Logistics Limited",
+      bio: "Tamaramieseiya Sammy is a seasoned Human Resources practitioner who also holds a Law degree from the University of Buckingham. Prior to the assumption of her role at Tenon Logistics, she worked at Duport Marine Limited as Manager, External Affairs and Human Resources after which she proceeded to Africa Terminals Limited where she worked as the Manager, Corporate (Business Integrity/Compliance, Legal Services and Human Capital Management) Services.",
     },
     {
       image: Juliet,
       name: "Juliet Odumosu",
       position: "Business Development Lead",
-      bio: "Juliet Odumosu holds a bachelor’s in science from the Obafemi Awolowo University where she studied International Relations.  She is a seasoned sales and Marketing specialist. She leads Business Development at Tenon Logistics. ",
+      bio: "Juliet Odumosu holds a bachelor’s in science from the Obafemi Awolowo University where she studied International Relations.",
     },
     {
       image: Akan,
       name: "Akang Imoh",
-      position: "Manager",
-      bio: "Akan Imoh is a graduate Business Management from the University of Calabar, a retired Soldier of the Nigerian Army and a member of the American Society of Industrial Security. He is a seasoned Security and Logistics operations professional with over 10 years of experience. He is the Manager, Logistics Operations. ",
+      position: "Logistics Operations Manager",
+      bio: "Akan Imoh is a graduate Business Management from the University of Calabar, a retired Soldier of the Nigerian Army and a member of the American Society of Industrial Security. He is a seasoned Security and Logistics operations professional with over 10 years of experience.",
     },
   ],
 };

@@ -24,7 +24,7 @@ function HomeBody() {
       contain: false,
       wrapAround: true,
       autoPlay: 2000,
-      prevNextButtons: false,
+      prevNextButtons: true,
       pageDots: false,
     });
 
