@@ -84,13 +84,7 @@ function About() {
                 <div className={styles.team_info}>
                   <h1>{data.name}</h1>
                   <p>{data.position}</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Malesuada tortor
-                    auctor dictum egestas amet ac tincidunt dignissim. Sed diam
-                    integer faucibus ut eget massa eu donec mattis. Lacus
-                    adipiscing amet in faucibus. Vestibulum id lorem quisque
-                    congue nulla feugiat. Amet tortor id amet et.
-                  </p>
+                  <p>{data.bio}</p>
                 </div>
               </Card>
             ))}

@@ -32,6 +32,7 @@ import service6 from "../assets/service6.png";
 // import service7 from "../assets/service7.png";
 import service8 from "../assets/service8.png";
 import Akan from "../assets/Akan.png";
+// import Akan from "../assets/Akan2.png";
 import Juliet from "../assets/Juliet.png";
 import Seiya from "../assets/Seiya.png";
 
@@ -194,22 +195,22 @@ export const Arrays = {
 
   team: [
     {
-      image: Akan,
-      name: "Akan Imoh",
-      position: "CEO",
-      bio: "Tenon Logistics is a supply chain Management Solutions services provider which renders services such as Logistics, Warehousing, Haulage, Freight-Forwarding, Customs Clearance and Integrated Project Management.",
-    },
-    {
       image: Seiya,
-      name: "Seiya Imoh",
-      position: "CEO",
-      bio: "Tenon Logistics is a supply chain Management Solutions services provider which renders services such as Logistics, Warehousing, Haulage, Freight-Forwarding, Customs Clearance and Integrated Project Management.",
+      name: "Tamaramieseiya Sammy",
+      position: "Co-Founder and Managing Director",
+      bio: "Tamaramieseiya Sammy is a seasoned Human Resources practitioner who also holds a Law degree from the University of Buckingham. Prior to the assumption of her role at Tenon Logistics, she worked at Duport Marine Limited as Manager, External Affairs and Human Resources after which she proceeded to Africa Terminals Limited where she worked as the Manager, Corporate (Business Integrity/Compliance, Legal Services and Human Capital Management) Services. She is Co-Founder and Managing Director of Tenon Logistics Limited",
     },
     {
       image: Juliet,
       name: "Juliet Odumosu",
-      position: "CEO",
-      bio: "Tenon Logistics is a supply chain Management Solutions services provider which renders services such as Logistics, Warehousing, Haulage, Freight-Forwarding, Customs Clearance and Integrated Project Management.",
+      position: "Business Development Lead",
+      bio: "Juliet Odumosu holds a bachelor’s in science from the Obafemi Awolowo University where she studied International Relations.  She is a seasoned sales and Marketing specialist. She leads Business Development at Tenon Logistics. ",
+    },
+    {
+      image: Akan,
+      name: "Akang Imoh",
+      position: "Manager",
+      bio: "Akan Imoh is a graduate Business Management from the University of Calabar, a retired Soldier of the Nigerian Army and a member of the American Society of Industrial Security. He is a seasoned Security and Logistics operations professional with over 10 years of experience. He is the Manager, Logistics Operations. ",
     },
   ],
 };
