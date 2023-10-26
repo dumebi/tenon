@@ -1163,7 +1163,7 @@
         display: flex;
         background-color: var(--primary-color);
         width: 21.375em;
-        height: 15.75em;
+        height: auto;
     }
 
     .card p:nth-child(2) {
@@ -1174,7 +1174,7 @@
     }
 
     .card p:nth-child(3) {
-        font-size: var(--medium-text-size);
+        font-size: var(--small-text-size);
         font-style: normal;
         font-weight: var(--light-font-weight);
         line-height: normal;
