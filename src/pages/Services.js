@@ -41,6 +41,18 @@ function Services() {
     }
   };
 
+  setTimeout(() => {
+    // Get the URL hash part
+    const hash = window.location.hash;
+
+    // Check if hash exists and starts with '#'
+    if (hash && hash.startsWith("#")) {
+      // Extract the part after '#'
+      const hashPart = hash.substring(0);
+      scrollToSection(hashPart);
+    }
+  }, 1500);
+
   return (
     <div>
       <Navbar />
@@ -73,7 +85,7 @@ function Services() {
 
         <div id="services" className={styles.all_services}>
           {/* services */}
-          <div className={styles.service_wrapper}>
+          <div className={styles.service_wrapper} id="logistics">
             <div className={styles.services_text}>
               <h1>Logistics</h1>
               <p>
@@ -99,7 +111,7 @@ function Services() {
           </div>
 
           {/* Freight forwarding */}
-          <div className={styles.second_service_wrapper}>
+          <div className={styles.second_service_wrapper} id="freight">
             <div className={styles.second_service_header}>
               <h1>Freight forwarding</h1>
               <p>
@@ -165,8 +177,8 @@ function Services() {
             </div>
           </div>
 
-          {/* integrated project precureent */}
-          <div className={styles.service_wrapper}>
+          {/* integrated project procurement */}
+          <div className={styles.service_wrapper} id="procurement">
             <div className={styles.services_text}>
               <h1>Integrated Project Procurement</h1>
               <p>
@@ -190,7 +202,7 @@ function Services() {
           </div>
 
           {/* Haulage  */}
-          <div className={styles.second_service_wrapper}>
+          <div className={styles.second_service_wrapper} id="haulage">
             <div className={styles.second_service_header}>
               <h1>Haulage</h1>
               <p>
@@ -247,7 +259,7 @@ function Services() {
           </div>
 
           {/* warehousing */}
-          <div className={styles.service_wrapper}>
+          <div className={styles.service_wrapper} id="warehouse">
             <div className={styles.services_text}>
               <h1>Warehousing</h1>
               <p>

@@ -109,6 +109,7 @@ export const Arrays = {
   tenon_features: [
     {
       header: "Freight forwarding",
+      route: "/services#logistics",
       svg: freightIcon,
       card_info: {
         svg: bikeIcon,
@@ -116,6 +117,7 @@ export const Arrays = {
         text: "Tenon Logistics operates a hybrid logistics model which combines various forms of transportation aimed at efficiently saving our clients time and costs.",
       },
       detailedInfo: {
+        route: "services#freight",
         header: "Air freight",
         text: "Tenon Logistics works with carefully selected airlines with world class services for cargo delivery thus ensuring that deadlines for project executions are met with a team of dedicated logistics experts monitoring the entire process.  ",
         header_two: "Ocean freight",
@@ -129,6 +131,7 @@ export const Arrays = {
 
     {
       header: "Haulage",
+      route: "/services#procurement",
       svg: haulageIcon,
       card_info: {
         svg: procurementIcon,
@@ -136,6 +139,7 @@ export const Arrays = {
         text: "Given our specialty in procurement related activities, Tenon Logistics provides seamless, timely and delivery of cost-efficient procurement services for all kinds of projects.",
       },
       detailedInfo: {
+        route: "/services#haulage",
         header: "Barging",
         text: "Our team of expert marine transport personnel are deployed to ensure that cargo transportation is executed safely and promptly through our  vast waters ways by barges and vessels.",
         header_two: "Trucking",
@@ -146,6 +150,7 @@ export const Arrays = {
 
     {
       header: "Haulage",
+      route: "/services#warehouse",
       svg: haulageIcon,
       card_info: {
         svg: warehouseIcon,

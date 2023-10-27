@@ -9,6 +9,7 @@ import freightImg from "../../assets/freight.png";
 import Partners from "../Layout/Partners";
 import "../../App.css";
 import { Arrays } from "../../utils/Arrays";
+import { Link } from "react-router-dom";
 
 function HomeBody() {
   // const [activeShippingRate, setActiveShippingRate] = useState("container");
@@ -85,9 +86,8 @@ function HomeBody() {
             <h1>Features made just for you</h1>
             <p>
               With a relentless focus on efficiency, reliability, and
-              innovation, we specialize in optimizing warehouses and logistics
-              operations to drive unparalleled success for businesses of all
-              sizes.{" "}
+              innovation, we specialize in optimizing Supply Chain solutions to
+              drive unparalleled success for businesses of all sizes.
             </p>
           </div>
           <div className={styles.body_features_main}>
@@ -99,7 +99,7 @@ function HomeBody() {
                   </div>
                   <p>{data.card_info.header}</p>
                   <p>{data.card_info.text}</p>
-                  <p>Learn more</p>
+                  <Link to={`${data.route}`}>Learn more</Link>
                 </Card>
                 {data.detailedInfo && (
                   <Card className={styles.body_features_main_second_card}>
@@ -175,7 +175,7 @@ function HomeBody() {
                       )}
                     </div>
                     {/* </div> */}
-                    <p>Learn more</p>
+                    <Link to={`${data.detailedInfo.route}`}>Learn more</Link>
                   </Card>
                 )}
               </div>

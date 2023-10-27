@@ -337,8 +337,9 @@
     line-height: normal;
 }
 
-.body_features_main_first_card p:nth-child(4) {
+.body_features_main_first_card a {
     font-size: var(--small-text-size);
+    text-decoration: none;
     font-style: normal;
     font-weight: var(--medium-font-weight);
     line-height: normal;
@@ -352,7 +353,8 @@
     line-height: normal;
 }
 
-.body_features_main_second_card p:nth-child(4) {
+.body_features_main_second_card a {
+    text-decoration: none;
     font-size: var(--small-text-size);
     font-style: normal;
     font-weight: var(--medium-font-weight);
