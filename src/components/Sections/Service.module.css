@@ -57,7 +57,7 @@
 
 .service_images {
     width: 100%;
-    height: 27.5em;
+    height: 30.5em;
     display: flex;
 }
 
@@ -195,6 +195,7 @@
 .second_service_freight_list {
     display: flex;
     width: 100%;
+    height: auto;
     flex-wrap: wrap;
     gap: 1.25rem;
 }
@@ -202,7 +203,8 @@
 .freight_card {
     display: flex;
     width: 25.041875em;
-    height: 538px;
+    /* height: 538px; */
+    height: auto;
     padding: 1.875rem 1.25rem;
     flex-direction: column;
     align-items: flex-start;

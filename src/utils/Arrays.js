@@ -23,7 +23,10 @@ import gallery6 from "../assets/gallery6.png";
 import gallery7 from "../assets/gallery7.png";
 import gallery8 from "../assets/gallery8.png";
 import gallery9 from "../assets/gallery9.png";
-import service1 from "../assets/service1.png";
+import gallery12 from "../assets/gallery12.png";
+import gallery13 from "../assets/gallery13.png";
+import gallery14 from "../assets/gallery14.png";
+// import service1 from "../assets/service1.png";
 import gallery11 from "../assets/gallery11.png";
 // import service3 from "../assets/service3.png";
 import service4 from "../assets/service4.png";
@@ -54,8 +57,11 @@ export const Arrays = {
   ],
   service_images: [
     service4,
+    gallery12,
+    gallery13,
+    gallery14,
     service8,
-    service1,
+    // service1,
     service5,
     service6,
     gallery2,

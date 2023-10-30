@@ -211,7 +211,7 @@ function Services() {
                 using our trucks given the uniqueness of the Nigerian waterways
                 as they crisscross the vast lands of the country. This model has
                 been found suitable and efficient by our clients and is also
-                ranked the most preferred for bulk cargo delivery.  
+                ranked the most preferred for bulk cargo delivery.
               </p>
             </div>
 
@@ -231,7 +231,7 @@ function Services() {
                   deployed to ensure that cargo transportation is done safely
                   and promptly through adequate stakeholder engagement. The
                   barging model saves our client from exposure to claims for
-                  demurrage at ports.  
+                  demurrage at ports.
                 </p>
                 <div>
                   <Button className={styles.button}>Book now</Button>

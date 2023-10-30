@@ -58,12 +58,6 @@ function HomeBody() {
           <div className={styles.body_about}>
             <div className={styles.body_about_header}>
               <h1>Going beyond ordinary for your business</h1>
-              <p>
-                With a relentless focus on efficiency, reliability, and
-                innovation, we specialize in optimizing warehouses and logistics
-                operations to drive unparalleled success for businesses of all
-                sizes.{" "}
-              </p>
             </div>
           </div>
           <div className={styles.body_about_cards}>
@@ -394,12 +388,6 @@ function HomeBody() {
           <div className={styles.body_about}>
             <div>
               <h1>Frequently asked questions</h1>
-              <p>
-                With a relentless focus on efficiency, reliability, and
-                innovation, we specialize in optimizing warehouses and logistics
-                operations to drive unparalleled success for businesses of all
-                sizes.
-              </p>
             </div>
           </div>
           <div className={styles.faq}>
