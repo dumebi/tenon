@@ -377,7 +377,6 @@
     gap: 0.875rem;
     display: flex;
     flex: 1;
-    /* background-color: blue; */
     width: 22.375em;
     flex-direction: column;
 }
@@ -1301,6 +1300,10 @@
         width: 21.375em;
         /* width: 100%; */
         height: auto;
+    }
+
+    .second_card:nth-child(1) {
+        width: 100%;
     }
 
     .card p:nth-child(2) {
