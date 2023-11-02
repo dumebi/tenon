@@ -5,7 +5,7 @@ import Flickity from "flickity";
 import "flickity/css/flickity.css";
 import styles from "../components/Sections/Service.module.css";
 import Button from "../components/UI/Button";
-import freightImg from "../assets/freight.png";
+import procurement from "../assets/procurement.png";
 import warehouse from "../assets/warehouse.png";
 import logistics from "../assets/logistics.png";
 import barging from "../assets/barging.png";
@@ -195,7 +195,7 @@ function Services() {
             <div className={styles.services_info_images}>
               <div className={styles.services_images_inner}>
                 <div className={styles.services_images_wrapper}>
-                  <img src={freightImg} alt="service" />
+                  <img src={procurement} alt="service" />
                 </div>
               </div>
             </div>
