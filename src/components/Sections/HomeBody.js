@@ -4,9 +4,8 @@ import Flickity from "flickity";
 import "flickity/css/flickity.css";
 import Card from "../UI/Card";
 import Typewriter from "typewriter-effect";
-// import manImg from "../../assets/smilling-man.png";
-// import Button from "../UI/Button";
-import freightImg from "../../assets/freight.png";
+import globe from "../../assets/globe.png";
+import customerSatisfaction from "../../assets/customer_satisfaction.png";
 import Partners from "../Layout/Partners";
 import "../../App.css";
 import { Arrays } from "../../utils/Arrays";
@@ -222,7 +221,7 @@ function HomeBody() {
           <div className={styles.services_info_images}>
             <div className={styles.services_images_inner}>
               <div className={styles.services_images_wrapper}>
-                <img src={freightImg} alt="service" />
+                <img src={globe} alt="service" />
               </div>
             </div>
           </div>
@@ -244,7 +243,7 @@ function HomeBody() {
           <div className={styles.services_info_images}>
             <div className={styles.services_images_inner}>
               <div className={styles.services_images_wrapper}>
-                <img src={freightImg} alt="service" />
+                <img src={customerSatisfaction} alt="service" />
               </div>
             </div>
           </div>
