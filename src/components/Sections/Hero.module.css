@@ -1002,6 +1002,10 @@
     gap: 1.5rem;
 }
 
+.team_cards a {
+    text-decoration: none;
+}
+
 .join_team_card {
     height: 12.125em;
     width: 32.34375em;

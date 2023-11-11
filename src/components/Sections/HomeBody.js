@@ -3,6 +3,7 @@ import styles from "./Hero.module.css";
 import Flickity from "flickity";
 import "flickity/css/flickity.css";
 import Card from "../UI/Card";
+import Typewriter from "typewriter-effect";
 // import manImg from "../../assets/smilling-man.png";
 // import Button from "../UI/Button";
 import freightImg from "../../assets/freight.png";
@@ -372,11 +373,37 @@ function HomeBody() {
               <p>Trucking operations executed</p>
             </Card>
             <Card className={styles.data_card}>
-              <h2>Total man hours -</h2>
-              <h3>LTI - </h3>
+              <h2>
+                <Typewriter
+                  className="color"
+                  options={{
+                    strings: [
+                      "Total man hours - 126,600",
+                      "LTI - 0",
+                      "Fatality - 0",
+                      "RWC - 0",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    changeDelay: 0.01,
+                  }}
+                />
+              </h2>
+              <p>HSE metrics</p>
             </Card>
             <Card className={styles.data_card}>
-              <h1>30 billion</h1>
+              <h2>
+                {" "}
+                <Typewriter
+                  className="color"
+                  options={{
+                    strings: ["RTI - 0", "MTI - 0", "FAC - 2"],
+                    autoStart: true,
+                    loop: true,
+                    changeDelay: 0.5,
+                  }}
+                />
+              </h2>
               <p>HSE metrics</p>
             </Card>
           </div>
