@@ -1,3 +1,11 @@
+.App {
+    /* App.css */
+    margin: 0 auto;
+    /* Center the container */
+    max-width: 1800px;
+    /* Set maximum width for the entire app */
+}
+
 .carousel {
     display: flex;
     flex-direction: column;
