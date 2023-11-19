@@ -1,8 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* poppins font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+
+:root {
+  --secondary: #782F11;
+  --primary-20: #ABC5C8;
+  --primary-color: #045159;
+  --green-background: #02292D;
+  --background-color: #FFFFFF;
+  --font-family: 'Red Hat Display', sans-serif;
+  --dark-font-color: #3E414C;
+  --light-font-color: #EDEEF2;
+  --grey-font-color: #9EA2B3;
+  --button-text-color: #FFFFFF;
+  --box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+  --medium-text-size: 1.125rem;
+  --small-text-size: 1rem;
+  --border-default-color: #DCDEE6;
+  --light-font-weight: 400;
+  --medium-font-weight: 700;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

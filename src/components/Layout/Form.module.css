@@ -1,0 +1,298 @@
+.report {
+    margin-top: 8.2rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: var(--font-family);
+    color: var(--light-font-color);
+    background-color: var(--green-background);
+}
+
+.report_header {
+    margin: auto;
+    width: 43.375em;
+    text-align: center;
+    display: flex;
+    padding: 3.125rem 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.report_header h1 {
+    color: var(--light-font-color);
+    text-align: center;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
+.report_header p {
+    color: var(--light-font-color);
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: var(--light-font-weight);
+    line-height: normal;
+}
+
+.report_personal_info {
+    margin: auto;
+    width: 50.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.report_login_info {
+    width: 24.375em;
+}
+
+.report_personal_info p {
+    color: var(--light-font-color);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
+.report_personal_info_input {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.input input,
+.report_personal_info_input_file_inner input {
+    flex: 1;
+    background-color: var(--green-background);
+    display: flex;
+    color: var(--light-font-color);
+    border: 0.0625rem solid var(--border-default-color);
+}
+
+.report_personal_info_input_file_inner input {
+    border: none;
+}
+
+.input label {
+    font-weight: var(--medium-font-weight);
+}
+
+.input label span,
+.report_personal_info_input_file_inner label span {
+    display: none;
+}
+
+.report_personal_info_input .rateFilter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.rateFilter select {
+    width: 100%;
+    flex: 1;
+    position: relative;
+    display: flex;
+    font-size: var(--small-text-size);
+    padding: 0.75rem 1rem;
+    align-items: center;
+    background-color: var(--green-background);
+    gap: 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: var(--light-font-weight);
+    color: var(--grey-font-color);
+    border: 0.0625rem solid var(--grey-font-color);
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.rateFilter label {
+    font-size: var(--small-text-size);
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
+.rateFilter select:focus {
+    outline: none;
+    border: 0.0625rem solid var(--grey-font-color);
+    background-color: var(--background-color);
+}
+
+.text_area textarea {
+    background-color: var(--green-background);
+    display: flex;
+    color: var(--light-font-color);
+    border: 1px solid var(--border-default-color);
+}
+
+.report_personal_info_input_file {
+    border-radius: 0.125rem;
+    display: flex;
+    padding: 1.5rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px dashed var(--border-default-color);
+}
+
+.report_personal_info_input_file_inner {
+    display: flex;
+    flex-direction: column;
+    width: 14.5625em;
+    align-items: center;
+}
+
+.report_personal_info_input_file p {
+    color: var(--light-font-color);
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1rem;
+}
+
+.btn {
+    margin-bottom: 1.5rem;
+}
+
+.report_header a {
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+    text-decoration: none;
+}
+
+.user_type {
+    display: flex;
+    width: 19.5625em;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.user_type div {
+    display: flex;
+    padding: 0.625rem 0.9375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.9375rem;
+    cursor: pointer;
+    background: #03363B;
+}
+
+.activeUser {
+    border: 1px solid #FFF;
+}
+
+.user_type div p {
+    color: #EDEEF2;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: var(--light-font-weight);
+    line-height: normal;
+}
+
+.other_options {
+    margin: auto;
+    display: flex;
+    width: 22.375em;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.other_options p {
+    color: #EDEEF2;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.sign_up_options {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+    margin-bottom: 3.125rem;
+}
+
+@media only screen and (max-width: 920px) {
+    .report {
+        margin-top: 5rem;
+        gap: 2rem;
+    }
+
+    .report_header {
+        width: 100%;
+        padding: 3.125rem 1.5rem;
+    }
+
+    .report_header h1 {
+        font-size: 1.5rem;
+    }
+
+    .report_header p {
+        font-size: 0.875rem;
+    }
+
+    .report_personal_info {
+        width: 100%;
+        padding: 0rem 1.5rem;
+    }
+
+    .report_personal_info p {
+        font-size: 1.125rem;
+    }
+
+    .report_personal_info_input {
+        flex-direction: column;
+    }
+
+    .report_personal_info_input_file p {
+        font-size: 0.75rem;
+    }
+
+    .report_header svg {
+        width: 4.28125em;
+        height: 2.1165625em;
+    }
+
+    .user_type {
+        width: 100%;
+    }
+
+    .other_options {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .other_options svg {
+        width: 6.625em;
+    }
+
+    .other_options p {
+        color: #EDEEF2;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+    }
+}

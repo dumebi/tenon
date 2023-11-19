@@ -1,0 +1,238 @@
+.contact {
+    margin-top: 9.375rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 8rem;
+    font-family: var(--font-family);
+}
+
+.contact_container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 1.25rem 6.25rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 4.3125rem;
+}
+
+.contact_info {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    border-radius: 0.9375rem;
+    border: 0.0625rem solid #CDDCDE;
+    background: var(--primary-color);
+    width: 38.875em;
+    height: 37.375em;
+}
+
+.worker_image {
+    width: 35.875em;
+    height: 23.125em;
+    display: flex;
+}
+
+.worker_image .worker_image_wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.worker_image .worker_image_wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contact_info h1 {
+    color: var(--background-color);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contact_info p {
+    color: var(--background-color);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact_methods {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contact_socials {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.125rem;
+}
+
+.contact_input .rateFilter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 513px;
+    flex: 1;
+    position: relative;
+}
+
+.rateFilter select {
+    width: 100%;
+    position: relative;
+    display: flex;
+    font-size: var(--small-text-size);
+    padding: 0.75rem 1rem;
+    align-items: center;
+    background-color: var(--background-color);
+    gap: 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: var(--light-font-weight);
+    color: var(--grey-font-color);
+    border: 0.0625rem solid var(--grey-font-color);
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.rateFilter label {
+    font-size: var(--small-text-size);
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+    color: var(--dark-font-color);
+}
+
+.rateFilter label span {
+    color: #900;
+}
+
+.rateFilter select:focus {
+    outline: none;
+    border: 0.0625rem solid var(--grey-font-color);
+    background-color: var(--background-color);
+}
+
+.contact_input {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-end;
+    gap: 1.5625rem;
+}
+
+.contact_success {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.contact_success_inner {
+    width: 35.375em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact_success h1 {
+    color: var(--grey-90, #3E414C);
+    font-size: 24px;
+    font-style: normal;
+    display: flex;
+    font-weight: 700;
+    text-align: inherit;
+    width: 100%;
+    line-height: normal;
+}
+
+.contact_success p {
+    color: var(--grey-90, #3E414C);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media only screen and (max-width: 920px) {
+    .contact {
+        margin-top: 4.975rem;
+        gap: 5.5rem;
+    }
+
+    .contact_container {
+        padding: 3.125rem 1.5rem;
+        flex-direction: column;
+        gap: 2.75rem;
+    }
+
+    .contact_info {
+        display: flex;
+        gap: 1rem;
+        height: auto;
+        border: 0.0625rem solid #CDDCDE;
+        background: var(--primary-color);
+        width: 100%;
+    }
+
+    .worker_image {
+        width: 100%;
+    }
+
+    .contact_info h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact_info p {
+        font-size: 0.875rem;
+    }
+
+    .contact_methods {
+        display: flex;
+        width: 12.0625em;
+        align-items: center;
+        align-content: center;
+        gap: 1rem 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .contact_methods svg:nth-child(2),
+    .contact_methods svg:nth-child(4) {
+        display: none;
+    }
+
+    .contact_input .rateFilter {
+        width: 100%;
+    }
+
+    .contact_input {
+        width: 100%;
+    }
+
+    .contact_success_inner {
+        width: 100%;
+    }
+
+    .contact_success h1 {
+        font-size: 1.125rem;
+        text-align: center;
+        width: auto;
+    }
+
+    .contact_success p {
+        font-size: 0.875rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,212 @@
+.tc {
+    margin: 8.2rem 0px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 4.0625rem;
+    font-family: var(--font-family);
+}
+
+.tc_inner {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 6.25rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 3.4375rem;
+}
+
+.tc_header {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 6.25rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 3.4375rem;
+    color: var(--light-font-color);
+    background-color: var(--green-background);
+}
+
+.tc_inner h1 {
+    color: var(--dark-font-color);
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
+.tc_inner div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+}
+
+.tc_inner h2 {
+    color: var(--dark-font-color);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
+.tc_inner p,
+.tc_inner li {
+    color: var(--dark-font-color);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: var(--light-font-weight);
+    line-height: normal;
+}
+
+.tc_inner span {
+    font-weight: var(--medium-font-weight);
+}
+
+.tc_inner h3 {
+    color: var(--dark-font-color);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: var(--medium-font-weight);
+    line-height: normal;
+}
+
+.tc_inner li {
+    margin-left: 1.5rem;
+}
+
+.faq {
+    margin: auto;
+    display: flex;
+    width: 55.4375em;
+    padding: 1.875rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.faq_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.875rem;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+    /* Add a transition for the transform property */
+}
+
+.rotated {
+    transform: rotate(180deg);
+    /* Rotate the arrow when open */
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    /* Add a transition for max-height */
+}
+
+.open {
+    max-height: 200px;
+    /* Adjust the maximum height as needed */
+}
+
+.faq_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq_header svg {
+    cursor: pointer;
+}
+
+.faq p {
+    color: var(--dark-font-color);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.faq h1 {
+    color: var(--dark-font-color);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@media only screen and (max-width: 920px) {
+    .tc {
+        margin: 3.375rem 0px;
+        gap: 1.5rem;
+    }
+
+    .tc_header {
+        padding: 3.125rem 1.5rem;
+        flex-direction: column;
+        gap: 2.75rem;
+    }
+
+    .tc_inner {
+        padding: 3.125rem 1.5rem;
+        flex-direction: column;
+        gap: 2.75rem;
+    }
+
+    .tc_header h1 {
+        font-size: 1.5rem;
+    }
+
+    .tc_inner h1 {
+        font-size: 1.5rem;
+    }
+
+    .tc_inner div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 24px;
+    }
+
+    .tc_inner h2 {
+        font-size: 1.125rem;
+    }
+
+    .tc_inner p,
+    .tc_inner li {
+        font-size: 0.875rem;
+    }
+
+    .tc_inner h3 {
+        font-size: 0.875rem;
+    }
+
+
+    .faq {
+        padding: 1.875rem;
+        width: 100%;
+    }
+
+    .faq p {
+        font-size: 0.875rem;
+    }
+
+    .faq h1 {
+        font-size: 0.875rem;
+    }
+}
