@@ -119,6 +119,16 @@
     line-height: normal;
 }
 
+.services_text a {
+    text-decoration: none;
+    color: var(--light-font-color);
+}
+
+.freight_card a {
+    text-decoration: none;
+    color: var(--light-font-color);
+}
+
 .services_info_images {
     display: flex;
     align-items: flex-end;

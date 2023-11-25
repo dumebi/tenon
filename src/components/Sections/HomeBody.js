@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./Hero.module.css";
 import Flickity from "flickity";
 import "flickity/css/flickity.css";
@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 function HomeBody() {
   // const [activeShippingRate, setActiveShippingRate] = useState("container");
   // const [activeOptionRate, setActiveOptionRate] = useState(0);
-  const [openQuestion, setOpenQuestion] = useState(null);
+  // const [openQuestion, setOpenQuestion] = useState(null);
 
   const flickityRef = useRef(null);
 
@@ -42,13 +42,13 @@ function HomeBody() {
   // };
 
   // Function to handle question clicks
-  const handleQuestionClick = (index) => {
-    if (openQuestion === index) {
-      setOpenQuestion(null);
-    } else {
-      setOpenQuestion(index);
-    }
-  };
+  // const handleQuestionClick = (index) => {
+  //   if (openQuestion === index) {
+  //     setOpenQuestion(null);
+  //   } else {
+  //     setOpenQuestion(index);
+  //   }
+  // };
 
   return (
     <div>
@@ -354,12 +354,6 @@ function HomeBody() {
           <div className={styles.body_about}>
             <div className={styles.body_about_header}>
               <h1>We are a data driven organization</h1>
-              <p>
-                With a relentless focus on efficiency, reliability, and
-                innovation, we specialize in optimizing warehouses and logistics
-                operations to drive unparalleled success for businesses of all
-                sizes.
-              </p>
             </div>
           </div>
           <div className={styles.body_about_cards}>
@@ -409,7 +403,7 @@ function HomeBody() {
         </div>
       </div>
       {/* FAQ's */}
-      <div className={`${styles.hero} ${styles.body}`}>
+      {/* <div className={`${styles.hero} ${styles.body}`}>
         <div className={styles.body_about_parent}>
           <div className={styles.body_about}>
             <div>
@@ -454,7 +448,7 @@ function HomeBody() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Gallery */}
       <div className={styles.gallery}>
