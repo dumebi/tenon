@@ -217,7 +217,7 @@ export const Arrays = {
       image: Juliet,
       name: "Juliet Odumosu",
       position: "Business Development Lead",
-      bio: "Juliet Odumosu holds a bachelor’s in science from the Obafemi Awolowo University where she studied International Relations.",
+      bio: "Juliet Odumosu, a seasoned marketing professional, with a background in business development and corporate sales. Her experience spans roles at Access Bank Nigeria and co-founding a Health-tech company. With affiliations in the Google for Startup Accelerators Alumni Network and the UK-Nigeria Future Females Founder's Network, Juliet is a force driving business growth at Tenon Logistics",
     },
     {
       image: Akan,

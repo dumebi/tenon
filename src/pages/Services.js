@@ -98,7 +98,15 @@ function Services() {
                 client designated location in a hybrid manner.
               </p>
               <div>
-                <Button>Book now</Button>
+                <Button>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfv-yYY57MtyGNzt6KHVXWALiYyX7AJwZ1sG7XSQjk3SFJQ1g/viewform?usp=sf_link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Book now
+                  </a>
+                </Button>
               </div>
             </div>
             <div className={styles.services_info_images}>
@@ -135,7 +143,15 @@ function Services() {
                   dedicated logistics experts monitoring the entire process.  
                 </p>
                 <div>
-                  <Button>Book now</Button>
+                  <Button>
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfv-yYY57MtyGNzt6KHVXWALiYyX7AJwZ1sG7XSQjk3SFJQ1g/viewform?usp=sf_link"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Book now
+                    </a>
+                  </Button>
                 </div>
               </Card>
 
@@ -153,7 +169,15 @@ function Services() {
                   lines regionally and globally.  
                 </p>
                 <div>
-                  <Button>Book now</Button>
+                  <Button>
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfv-yYY57MtyGNzt6KHVXWALiYyX7AJwZ1sG7XSQjk3SFJQ1g/viewform?usp=sf_link"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Book now
+                    </a>
+                  </Button>
                 </div>
               </Card>
 
@@ -189,7 +213,15 @@ function Services() {
                 interest in quality to our clients.
               </p>
               <div>
-                <Button>Book now</Button>
+                <Button>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfv-yYY57MtyGNzt6KHVXWALiYyX7AJwZ1sG7XSQjk3SFJQ1g/viewform?usp=sf_link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Book now
+                  </a>
+                </Button>
               </div>
             </div>
             <div className={styles.services_info_images}>
@@ -234,7 +266,15 @@ function Services() {
                   demurrage at ports.
                 </p>
                 <div>
-                  <Button className={styles.button}>Book now</Button>
+                  <Button className={styles.button}>
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfv-yYY57MtyGNzt6KHVXWALiYyX7AJwZ1sG7XSQjk3SFJQ1g/viewform?usp=sf_link"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Book now
+                    </a>
+                  </Button>
                 </div>
               </Card>
 
@@ -252,7 +292,15 @@ function Services() {
                   dedicated transportation team.  
                 </p>
                 <div>
-                  <Button className={styles.button}>Book now</Button>
+                  <Button className={styles.button}>
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfv-yYY57MtyGNzt6KHVXWALiYyX7AJwZ1sG7XSQjk3SFJQ1g/viewform?usp=sf_link"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Book now
+                    </a>
+                  </Button>
                 </div>
               </Card>
             </div>
@@ -270,7 +318,15 @@ function Services() {
                 contract.
               </p>
               <div>
-                <Button>Book now</Button>
+                <Button>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfv-yYY57MtyGNzt6KHVXWALiYyX7AJwZ1sG7XSQjk3SFJQ1g/viewform?usp=sf_link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Book now
+                  </a>
+                </Button>
               </div>
             </div>
             <div className={styles.services_info_images}>
