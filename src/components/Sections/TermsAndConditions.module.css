@@ -1,5 +1,5 @@
 .tc {
-    margin: 8.2rem 0px;
+    margin: 0rem 0px;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -152,7 +152,7 @@
 
 @media only screen and (max-width: 920px) {
     .tc {
-        margin: 3.375rem 0px;
+        margin: 0rem 0px;
         gap: 1.5rem;
     }
 

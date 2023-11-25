@@ -1,5 +1,5 @@
 .hero {
-    margin-top: 2.375rem;
+    margin-top: 0rem;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -1198,7 +1198,7 @@
 
 @media only screen and (max-width: 920px) {
     .hero {
-        margin-top: 6.375rem;
+        margin-top: 0rem;
         gap: 5.5rem;
     }
 
