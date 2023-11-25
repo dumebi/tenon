@@ -200,7 +200,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.25rem;
-    /* background-color: red; */
 }
 
 .body_about_header {
@@ -222,8 +221,12 @@
     width: 47em;
 }
 
+.second_card {
+    width: 18.875em;
+}
+
 .second_card:nth-child(1) {
-    width: 22.875em;
+    width: 18.875em;
 }
 
 .svg_wrapper {
@@ -320,12 +323,12 @@
 
 .body_features_main_first_card {
     width: 24.25em;
-    height: 370px;
+    height: auto;
 }
 
 .body_features_main_second_card {
     width: 49.75em;
-    height: 370px;
+    height: auto;
     flex: 1;
 }
 
@@ -603,7 +606,7 @@
 .data_card {
     display: flex;
     background-color: var(--secondary);
-    width: 21.625em;
+    width: 18.625em;
     height: 14.25em;
     align-items: center;
     justify-content: center;
