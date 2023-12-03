@@ -12,7 +12,13 @@ import company6 from "../../assets/image 6.png";
 
 function Hero() {
   const phrases = useMemo(
-    () => ["Supply chain", "Supply chain", "Supply chain"],
+    () => [
+      "Logistics",
+      "Freight Forwarding",
+      "Procurement",
+      "Haulage",
+      "Warehousing",
+    ],
     []
   );
   const [currentPhrase, setCurrentPhrase] = useState(phrases[0]);
@@ -39,7 +45,7 @@ function Hero() {
         setCurrentPhrase(phrases[phraseIndex]);
         setIsHidden(false);
       }, 1000);
-    }, 800);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, [phraseIndex, phrases]);

@@ -3,6 +3,7 @@ import communicationIcon from "../assets/svg/Communication.svg";
 import timerIcon from "../assets/svg/Timer.svg";
 import globalIcon from "../assets/svg/Global.svg";
 import bikeIcon from "../assets/svg/Bike.svg";
+// import quality from "../assets/svg/Quality.svg";
 import freightIcon from "../assets/svg/Freight.svg";
 import procurementIcon from "../assets/svg/Product-procurement.svg";
 import haulageIcon from "../assets/svg/Haulage.svg";
@@ -75,7 +76,7 @@ export const Arrays = {
     {
       header: "Sustainable solutions",
       svg: globalIcon,
-      text: "Our policy is to ensure that service solutions to our clients are in the best interest of the clients business objective and we are committed to this principle by the extent of research and stimulations we engage in before execution.",
+      text: "Our policy is to ensure that our services are in the best interests of our stakeholders and we are committed to this principle by the extent of research and stipulations we engage in before execution.",
     },
     {
       header: "Great customer experience",
@@ -105,10 +106,15 @@ export const Arrays = {
       svg: timerIcon,
       text: "Tailored to your unique requirements. ",
     },
+    // {
+    //   header: "User-Friendly Experience",
+    //   svg: globalIcon,
+    //   text: "We ensure that working with us is straightforward and seamless.",
+    // },
     {
-      header: "User-Friendly Experience",
-      svg: globalIcon,
-      text: "We ensure that working with us is straightforward and seamless.",
+      header: "Quality Assurance",
+      svg: communicationIcon,
+      text: "We are commited to meeting the demands, requirements and expectations of our customers.",
     },
   ],
 

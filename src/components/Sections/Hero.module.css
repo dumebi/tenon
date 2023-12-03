@@ -612,6 +612,10 @@
     justify-content: center;
 }
 
+.data_card2 {
+    width: 38.5em;
+}
+
 .data_card h1 {
     color: var(--light-font-color);
     text-align: center;
@@ -711,7 +715,7 @@
 }
 
 .services_images_inner {
-    width: 39.8125em;
+    width: 34.8125em;
     height: 28.25em;
     display: flex;
     border-radius: 50px;

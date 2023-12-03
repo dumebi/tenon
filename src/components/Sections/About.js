@@ -138,7 +138,7 @@ function About() {
                                 fill="#556987"
                               />
                             </svg>
-                            <p>Remote friendly</p>
+                            <p>{data?.fields?.location}</p>
                           </div>
                           <div>
                             <svg

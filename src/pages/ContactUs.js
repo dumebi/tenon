@@ -30,7 +30,9 @@ function ContactUs() {
               we’d get back to you as soon as possible
             </p>
             <div className={styles.contact_methods}>
-              <p>info@tenonlogistics.com</p>
+              <a href="mailto:info@tenonlogistics.com">
+                <p>info@tenonlogistics.com</p>
+              </a>
               <svg
                 width="2"
                 height="20"

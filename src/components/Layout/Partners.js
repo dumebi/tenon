@@ -7,6 +7,7 @@ import partner4 from "../../assets/partners/image 4.png";
 import partner5 from "../../assets/partners/image 5.png";
 import partner6 from "../../assets/partners/image 6.png";
 import partner7 from "../../assets/partners/image 7.png";
+import partner8 from "../../assets/partners/image 8.png";
 
 function Partners() {
   const partners = [
@@ -17,6 +18,7 @@ function Partners() {
     { img: partner3 },
     { img: partner2 },
     { img: partner7 },
+    { img: partner8 },
   ];
   return (
     <div className={styles.partners}>

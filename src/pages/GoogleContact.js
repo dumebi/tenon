@@ -22,7 +22,9 @@ function GoogleContact() {
               we’d get back to you as soon as possible
             </p>
             <div className={styles.contact_methods}>
-              <p>info@tenonlogistics.com</p>
+              <a href="mailto:info@tenonlogistics.com">
+                <p>info@tenonlogistics.com</p>
+              </a>
               <svg
                 width="2"
                 height="20"
@@ -38,7 +40,9 @@ function GoogleContact() {
                   stroke="white"
                 />
               </svg>
-              <p>+2348165699416</p>
+              <a href="tel:2348165699416">
+                <p>+2348165699416</p>
+              </a>
               <svg
                 width="2"
                 height="20"

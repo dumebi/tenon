@@ -111,11 +111,6 @@ function HomeBody() {
                         <p>{data.detailedInfo.text}</p>
                       </div>
 
-                      {/* <div
-                        className={
-                          styles.body_features_main_second_card_inner_second
-                        }
-                      > */}
                       <svg
                         width="2"
                         height="196"
@@ -168,7 +163,7 @@ function HomeBody() {
                         </div>
                       )}
                     </div>
-                    {/* </div> */}
+
                     <Link to={`${data.detailedInfo.route}`}>Learn more</Link>
                   </Card>
                 )}
@@ -365,7 +360,7 @@ function HomeBody() {
               <h1>865</h1>
               <p>Trucking operations executed</p>
             </Card>
-            <Card className={styles.data_card}>
+            <Card className={`${styles.data_card2} ${styles.data_card}`}>
               <h2>
                 <Typewriter
                   className="color"
@@ -375,6 +370,9 @@ function HomeBody() {
                       "LTI - 0",
                       "Fatality - 0",
                       "RWC - 0",
+                      "RTI - 0",
+                      "MTI - 0",
+                      "FAC - 2",
                     ],
                     autoStart: true,
                     loop: true,
@@ -384,7 +382,7 @@ function HomeBody() {
               </h2>
               <p>HSE metrics</p>
             </Card>
-            <Card className={styles.data_card}>
+            {/* <Card className={styles.data_card}>
               <h2>
                 {" "}
                 <Typewriter
@@ -398,7 +396,7 @@ function HomeBody() {
                 />
               </h2>
               <p>HSE metrics</p>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>
