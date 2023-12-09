@@ -9,7 +9,7 @@ import customerSatisfaction from "../../assets/customer_satisfaction.png";
 import Partners from "../Layout/Partners";
 import "../../App.css";
 import { Arrays } from "../../utils/Arrays";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function HomeBody() {
   // const [activeShippingRate, setActiveShippingRate] = useState("container");
@@ -74,7 +74,7 @@ function HomeBody() {
         </div>
       </div>
       {/* features */}
-      <div className={styles.body_features}>
+      {/* <div className={styles.body_features}>
         <div className={styles.body_features_inner}>
           <div className={styles.body_features_header}>
             <h1>Features made just for you</h1>
@@ -171,7 +171,7 @@ function HomeBody() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={`${styles.hero} ${styles.body}`}>
         <div className={styles.body_about_parent}>
@@ -353,7 +353,7 @@ function HomeBody() {
           </div>
           <div className={styles.body_about_cards}>
             <Card className={styles.data_card}>
-              <h1>29,431 MT</h1>
+              <h1>30,470 MT</h1>
               <p>Total cargo handled</p>
             </Card>
             <Card className={styles.data_card}>
