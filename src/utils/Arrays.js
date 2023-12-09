@@ -27,7 +27,7 @@ import gallery9 from "../assets/gallery9.png";
 import gallery12 from "../assets/gallery12.png";
 import gallery13 from "../assets/gallery13.png";
 import gallery14 from "../assets/gallery14.png";
-import gallery_i7 from "../assets/gallery7.png";
+import gallery_i7 from "../assets/gallery/image7.png";
 import gallery from "../assets/gallery.png";
 // import service1 from "../assets/service1.png";
 import gallery11 from "../assets/gallery11.png";
