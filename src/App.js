@@ -11,6 +11,7 @@ import IncidentReport from "./pages/IncidentReport";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import GoogleContact from "./pages/GoogleContact";
+import Careers from "./pages/Careers";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         {/* <Route path="/contact-us" element={<ContactUs />} /> */}
         <Route path="/contact-us" element={<GoogleContact />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/careers" element={<Careers />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/report" element={<IncidentReport />} />
