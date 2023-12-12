@@ -125,15 +125,15 @@ function Careers() {
                         <p>Full-time</p>
                       </div>
                     </div>
-                    <a
+                    {/* <a
                       target="_blank"
                       rel="noreferrer"
                       href={data?.fields?.form_links}
-                    >
-                      <div className={styles.btn}>
-                        <p>Apply now</p>
-                      </div>{" "}
-                    </a>
+                    > */}
+                    <div className={styles.btn}>
+                      <p>Coming soon</p>
+                    </div>{" "}
+                    {/* </a> */}
                   </Card>
                 )}
               </div>
