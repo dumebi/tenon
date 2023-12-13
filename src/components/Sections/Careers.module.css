@@ -187,6 +187,7 @@
     .careers {
         margin-top: 0rem;
         gap: 5.5rem;
+        padding: 0rem 1.5rem;
     }
 
     .careers_hero {
@@ -220,7 +221,7 @@
 
     .team_cards {
         margin: auto;
-        width: 342px;
+        width: 100%;
     }
 
     .team_join {
