@@ -98,7 +98,7 @@ function Navbar() {
         <NavLink to="/services">Services</NavLink>
         <NavLink to="/about-us">About us</NavLink>
         <NavLink to="/contact-us">Contact us</NavLink>
-        <NavLink to="/careers">Careers</NavLink>
+        {/* <NavLink to="/careers">Careers</NavLink> */}
 
         <div className={styles.mobile_auth}>
           <Link to="/login">
@@ -141,7 +141,7 @@ function Navbar() {
             Contact Us
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="/careers"
             className={(navData) =>
@@ -150,7 +150,7 @@ function Navbar() {
           >
             Careers
           </NavLink>
-        </li>
+        </li> */}
       </ul>
       <div className={styles.navbar_auth}>
         <div>

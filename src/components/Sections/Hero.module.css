@@ -142,12 +142,21 @@
 
 /* body about */
 
+
 .body {
     background-color: var(--green-background);
     color: var(--light-font-color) !important;
     display: flex;
     flex-direction: column;
     padding: 3.75rem 6.25rem;
+}
+
+.body:nth-child(1) {
+    background-color: #FFFF;
+}
+
+.body:nth-child(1) h1 {
+    color: var(--dark-font-color)
 }
 
 .body2 {
