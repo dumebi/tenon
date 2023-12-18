@@ -97,8 +97,12 @@ function Footer() {
       </div>
       <div className={styles.contact}>
         <h1>Connect with us</h1>
-        <p>info@tenonlogistics.com</p>
-        <p>+2348165699416</p>
+        <a href="mailto:info@tenonlogistics.com">
+          <p>info@tenonlogistics.com</p>
+        </a>
+        <a href="tel:2348165699416">
+          <p>+2348165699416</p>
+        </a>
         <div className={styles.footer_socials}>
           {/* facebook icon */}
           <div>
