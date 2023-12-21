@@ -206,7 +206,7 @@ export const Arrays = {
     {
       question: "Who is a Tenon Logistics Agent and How do I become an Agent?",
       answer:
-        "An agent is any person who attracts clients or patronage of Tenon Logistics for a commission. To become a Tenon Logistics registered agent, the interested person must be registered and given a unique code. To become an agent click [insert hyperlink].",
+        "An agent is any person who attracts clients or patronage of Tenon Logistics for a commission. To become a Tenon Logistics registered agent, the interested person must be registered and given a unique code.",
     },
     {
       question:

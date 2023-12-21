@@ -126,7 +126,7 @@ function GoogleContact() {
 
                 {/* LinkedIn icon */}
 
-                <div>
+                {/* <div>
                   <svg
                     width="25"
                     height="24"
@@ -151,7 +151,7 @@ function GoogleContact() {
                       </clipPath>
                     </defs>
                   </svg>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

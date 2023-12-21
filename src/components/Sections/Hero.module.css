@@ -1319,11 +1319,15 @@
         /* background-color: red; */
     }
 
+    .card:nth-child(1) {
+        width: 100%;
+    }
+
     .card {
         display: flex;
         background-color: var(--primary-color);
         width: 21.375em;
-        /* width: 100%; */
+        width: 100%;
         height: auto;
     }
 
@@ -1497,8 +1501,12 @@
 
     /* data driven */
     .data_card {
-        width: 21.375em;
+        width: 100%;
         height: 6.5625em;
+    }
+
+    .data_card2 {
+        width: 100%;
     }
 
     .data_card h1 {
