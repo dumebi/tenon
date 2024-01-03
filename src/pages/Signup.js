@@ -12,20 +12,20 @@ import Button from "../components/UI/Button";
 
 function Signup() {
   const [phoneNumber, setPhoneNumber] = useState("");
-  // const [userType, setUserType] = useState(null);
+  const [userType, setUserType] = useState(null);
 
   const handlePhoneNumberChange = (value) => {
     setPhoneNumber(value);
   };
 
   //Set the user type (Customer or agent)
-  // const handleUserType = (value) => {
-  //   if (value === userType) {
-  //     setUserType(null);
-  //   } else {
-  //     setUserType(value);
-  //   }
-  // };
+  const handleUserType = (value) => {
+    if (value === userType) {
+      setUserType(null);
+    } else {
+      setUserType(value);
+    }
+  };
 
   return (
     <div>
@@ -132,7 +132,7 @@ function Signup() {
               label="Password"
               placeholder="Placeholder"
             />
-            {/* <div className={styles.rateFilter}>
+            <div className={styles.rateFilter}>
               <label>User type</label>
               <div className={styles.user_type}>
                 <div
@@ -148,7 +148,7 @@ function Signup() {
                   <p>I am an agent</p>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>{" "}
           <Button className={styles.btn}>Create account</Button>
           <div className={styles.other_options}>

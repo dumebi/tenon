@@ -9,10 +9,17 @@ import company3 from "../../assets/image 3.png";
 import company4 from "../../assets/image 4.png";
 import company5 from "../../assets/image 5.png";
 import company6 from "../../assets/image 6.png";
+import company7 from "../../assets/partners/image 8.png";
 
 function Hero() {
   const phrases = useMemo(
-    () => ["Supply chain", "Supply chain", "Supply chain"],
+    () => [
+      "Logistics",
+      "Freight Forwarding",
+      "Procurement",
+      "Haulage",
+      "Warehousing",
+    ],
     []
   );
   const [currentPhrase, setCurrentPhrase] = useState(phrases[0]);
@@ -27,6 +34,7 @@ function Hero() {
     { img: company6 },
     { img: company3 },
     { img: company2 },
+    { img: company7 },
   ];
 
   //side effect to change the phrase change in the hero section
@@ -39,7 +47,7 @@ function Hero() {
         setCurrentPhrase(phrases[phraseIndex]);
         setIsHidden(false);
       }, 1000);
-    }, 800);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, [phraseIndex, phrases]);

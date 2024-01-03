@@ -7,7 +7,6 @@ import partner4 from "../../assets/partners/image 4.png";
 import partner5 from "../../assets/partners/image 5.png";
 import partner6 from "../../assets/partners/image 6.png";
 import partner7 from "../../assets/partners/image 7.png";
-
 function Partners() {
   const partners = [
     { img: partner4 },

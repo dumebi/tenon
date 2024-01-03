@@ -3,6 +3,7 @@ import communicationIcon from "../assets/svg/Communication.svg";
 import timerIcon from "../assets/svg/Timer.svg";
 import globalIcon from "../assets/svg/Global.svg";
 import bikeIcon from "../assets/svg/Bike.svg";
+// import quality from "../assets/svg/Quality.svg";
 import freightIcon from "../assets/svg/Freight.svg";
 import procurementIcon from "../assets/svg/Product-procurement.svg";
 import haulageIcon from "../assets/svg/Haulage.svg";
@@ -26,6 +27,8 @@ import gallery9 from "../assets/gallery9.png";
 import gallery12 from "../assets/gallery12.png";
 import gallery13 from "../assets/gallery13.png";
 import gallery14 from "../assets/gallery14.png";
+import gallery_i7 from "../assets/gallery/image7.png";
+import gallery from "../assets/gallery.png";
 // import service1 from "../assets/service1.png";
 import gallery11 from "../assets/gallery11.png";
 // import service3 from "../assets/service3.png";
@@ -54,6 +57,7 @@ export const Arrays = {
     gallery11,
     image6,
     image7,
+    gallery_i7,
   ],
   service_images: [
     service4,
@@ -70,12 +74,13 @@ export const Arrays = {
     gallery6,
     gallery7,
     gallery9,
+    gallery,
   ],
   tenon_about: [
     {
       header: "Sustainable solutions",
       svg: globalIcon,
-      text: "Our policy is to ensure that service solutions to our clients are in the best interest of the clients business objective and we are committed to this principle by the extent of research and stimulations we engage in before execution.",
+      text: "Our policy is to ensure that our services are in the best interests of our stakeholders and we are committed to this principle by the extent of research and stipulations we engage in before execution.",
     },
     {
       header: "Great customer experience",
@@ -105,10 +110,15 @@ export const Arrays = {
       svg: timerIcon,
       text: "Tailored to your unique requirements. ",
     },
+    // {
+    //   header: "User-Friendly Experience",
+    //   svg: globalIcon,
+    //   text: "We ensure that working with us is straightforward and seamless.",
+    // },
     {
-      header: "User-Friendly Experience",
-      svg: globalIcon,
-      text: "We ensure that working with us is straightforward and seamless.",
+      header: "Quality Assurance",
+      svg: communicationIcon,
+      text: "We are commited to meeting the demands, requirements and expectations of our customers.",
     },
   ],
 
@@ -196,7 +206,7 @@ export const Arrays = {
     {
       question: "Who is a Tenon Logistics Agent and How do I become an Agent?",
       answer:
-        "An agent is any person who attracts clients or patronage of Tenon Logistics for a commission. To become a Tenon Logistics registered agent, the interested person must be registered and given a unique code. To become an agent click [insert hyperlink].",
+        "An agent is any person who attracts clients or patronage of Tenon Logistics for a commission. To become a Tenon Logistics registered agent, the interested person must be registered and given a unique code.",
     },
     {
       question:

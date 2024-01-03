@@ -1,0 +1,301 @@
+.careers {
+    margin-top: 0rem;
+    margin-bottom: 8rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 8em;
+    font-family: var(--font-family);
+}
+
+.careers_hero {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.8125rem;
+    width: 79.375em;
+    height: 29.4375em;
+    border-radius: 1.875rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('/src/assets/barging.png'), lightgray 50% / cover no-repeat;
+}
+
+.careers_hero_inner {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 41.1875em;
+}
+
+.careers_hero_inner h1 {
+    color: var(--grey-10, #FFF);
+    text-align: center;
+    /* Heading/XLarge */
+    font-family: Red Hat Display;
+    font-size: 4.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.careers_hero_inner p {
+    color: var(--grey-10, #FFF);
+    text-align: center;
+    /* Paragraph/Large */
+    font-family: Red Hat Display;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.careers_hero_inner svg {
+    cursor: pointer;
+}
+
+.careers_opening {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.careers_opening h1 {
+    color: var(--grey-90, #3E414C);
+
+    /* Heading/Large */
+    font-family: Red Hat Display;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.careers_opening p {
+    color: var(--grey-90, #3E414C);
+    text-align: center;
+
+    /* Paragraph/Large */
+    font-family: Red Hat Display;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.careers_opening_inner {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+    width: 50.9375em;
+}
+
+.team_cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem 5.125rem;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.team_cards a {
+    text-decoration: none;
+}
+
+.join_team_card {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin: auto;
+    align-self: stretch;
+    border-radius: 20px;
+    border: 1px solid var(--primary-10, #CDDCDE);
+    background: #FFF;
+}
+
+.join_team_card h1 {
+    color: #02292D;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.875rem;
+}
+
+.join_team_card p {
+    color: #8896AB;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.join_team_info {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.join_team_info div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.join_our_info p {
+    color: #8896AB;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.btn {
+    display: flex;
+    padding: 0.5rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid var(--primary-50, #045159);
+}
+
+.btn p {
+    color: var(--primary-50, #045159);
+
+    /* Label/Medium */
+    font-family: Red Hat Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@media only screen and (max-width: 920px) {
+    .careers {
+        margin-top: 0rem;
+        gap: 5.5rem;
+        padding: 0rem 1.5rem;
+    }
+
+    .careers_hero {
+        margin-top: 1.25rem;
+        width: 100%;
+        flex: 1 0 0;
+        align-self: stretch;
+        border-radius: 0.4688rem;
+        height: 14.25em;
+    }
+
+    .careers_hero_inner {
+        display: flex;
+        width: 17.75em;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .careers_hero_inner h1 {
+        font-size: 1.5rem;
+    }
+
+    .careers_hero_inner p {
+        font-size: 12px;
+    }
+
+    .careers_hero_inner svg {
+        width: 2.3575em;
+    }
+
+    .team_cards {
+        margin: auto;
+        width: 100%;
+    }
+
+    .team_join {
+        gap: 1.5rem;
+        flex-direction: column;
+    }
+
+    .join_our_team {
+        padding: 0rem 1.5625rem;
+        padding-bottom: 3.125rem;
+    }
+
+    .join_team_card {
+        height: auto;
+        width: 100%;
+        padding: 0.9375rem;
+    }
+
+    .join_team_card h1 {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: normal;
+
+    }
+
+    .join_team_card p {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .join_our_info p {
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .careers_opening {
+        gap: 1.5rem;
+
+    }
+
+    .careers_opening_inner {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        align-self: stretch;
+        width: 21.375em;
+    }
+
+    .careers_opening h1 {
+        color: var(--grey-90, #3E414C);
+        text-align: center;
+
+        /* Heading/Medium */
+        font-family: Red Hat Display;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .careers_opening p {
+        color: var(--grey-90, #3E414C);
+        text-align: center;
+
+        /* Paragraph/Small */
+        font-family: Red Hat Display;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

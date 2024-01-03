@@ -204,7 +204,7 @@ function Services() {
           {/* integrated project procurement */}
           <div className={styles.service_wrapper} id="procurement">
             <div className={styles.services_text}>
-              <h1>Integrated Project Procurement</h1>
+              <h1>Procurement</h1>
               <p>
                 Given our specialty in procurement related activities, Tenon
                 Logistics specializes in seamless and timely procurement and

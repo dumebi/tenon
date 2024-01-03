@@ -9,7 +9,7 @@ import customerSatisfaction from "../../assets/customer_satisfaction.png";
 import Partners from "../Layout/Partners";
 import "../../App.css";
 import { Arrays } from "../../utils/Arrays";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function HomeBody() {
   // const [activeShippingRate, setActiveShippingRate] = useState("container");
@@ -74,7 +74,7 @@ function HomeBody() {
         </div>
       </div>
       {/* features */}
-      <div className={styles.body_features}>
+      {/* <div className={styles.body_features}>
         <div className={styles.body_features_inner}>
           <div className={styles.body_features_header}>
             <h1>Features made just for you</h1>
@@ -111,11 +111,6 @@ function HomeBody() {
                         <p>{data.detailedInfo.text}</p>
                       </div>
 
-                      {/* <div
-                        className={
-                          styles.body_features_main_second_card_inner_second
-                        }
-                      > */}
                       <svg
                         width="2"
                         height="196"
@@ -168,7 +163,7 @@ function HomeBody() {
                         </div>
                       )}
                     </div>
-                    {/* </div> */}
+
                     <Link to={`${data.detailedInfo.route}`}>Learn more</Link>
                   </Card>
                 )}
@@ -176,7 +171,7 @@ function HomeBody() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={`${styles.hero} ${styles.body}`}>
         <div className={styles.body_about_parent}>
@@ -358,14 +353,14 @@ function HomeBody() {
           </div>
           <div className={styles.body_about_cards}>
             <Card className={styles.data_card}>
-              <h1>29,431 MT</h1>
+              <h1>30,470 MT</h1>
               <p>Total cargo handled</p>
             </Card>
             <Card className={styles.data_card}>
               <h1>865</h1>
               <p>Trucking operations executed</p>
             </Card>
-            <Card className={styles.data_card}>
+            <Card className={`${styles.data_card2} ${styles.data_card}`}>
               <h2>
                 <Typewriter
                   className="color"
@@ -375,6 +370,9 @@ function HomeBody() {
                       "LTI - 0",
                       "Fatality - 0",
                       "RWC - 0",
+                      "RTI - 0",
+                      "MTI - 0",
+                      "FAC - 2",
                     ],
                     autoStart: true,
                     loop: true,
@@ -384,7 +382,7 @@ function HomeBody() {
               </h2>
               <p>HSE metrics</p>
             </Card>
-            <Card className={styles.data_card}>
+            {/* <Card className={styles.data_card}>
               <h2>
                 {" "}
                 <Typewriter
@@ -398,7 +396,7 @@ function HomeBody() {
                 />
               </h2>
               <p>HSE metrics</p>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>
