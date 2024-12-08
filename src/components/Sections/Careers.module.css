@@ -115,11 +115,13 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+    min-width: 640px;
+    max-width: 640px;
     margin: auto;
     align-self: stretch;
     border-radius: 20px;
     border: 1px solid var(--primary-10, #CDDCDE);
-    background: #FFF;
+    background: #fff;
 }
 
 .join_team_card h1 {

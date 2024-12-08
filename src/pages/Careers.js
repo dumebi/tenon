@@ -90,8 +90,8 @@ function Careers() {
                   <Card className={styles.join_team_card} key={data?.id}>
                     <h1>{data?.fields?.position}</h1>
                     <p>
-                      We’re looking for a mid-level Front-end Developer to join
-                      our team.
+                      We’re looking for a {data?.fields?.position} to join our
+                      team.
                     </p>
                     <div className={styles.join_team_info}>
                       <div>
@@ -125,15 +125,17 @@ function Careers() {
                         <p>Full-time</p>
                       </div>
                     </div>
-                    {/* <a
+                    <a
                       target="_blank"
                       rel="noreferrer"
                       href={data?.fields?.form_links}
-                    > */}
-                    <div className={styles.btn}>
-                      <p>Coming soon</p>
-                    </div>{" "}
-                    {/* </a> */}
+                    >
+                      <div className={styles.btn}>
+                        <p>
+                          {data?.fields?.form_links ? "Apply" : "Coming soon"}
+                        </p>
+                      </div>{" "}
+                    </a>
                   </Card>
                 )}
               </div>
