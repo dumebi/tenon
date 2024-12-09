@@ -99,7 +99,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem 5.125rem;
+    gap: 1.5rem;
     margin: auto;
     flex-wrap: wrap;
     width: 100%;
@@ -117,6 +117,7 @@
     gap: 24px;
     min-width: 640px;
     max-width: 640px;
+    width: 640px;
     margin: auto;
     align-self: stretch;
     border-radius: 20px;
@@ -239,6 +240,8 @@
     .join_team_card {
         height: auto;
         width: 100%;
+        min-width: 100%;
+        max-width: 100%;
         padding: 0.9375rem;
     }
 
