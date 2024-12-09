@@ -97,6 +97,7 @@ function Navbar() {
 
         <NavLink to="/services">Services</NavLink>
         <NavLink to="/about-us">About us</NavLink>
+        <NavLink to="/careers">Careers</NavLink>
         <NavLink to="/contact-us">Contact us</NavLink>
         {/* <NavLink to="/careers">Careers</NavLink> */}
 
@@ -129,6 +130,16 @@ function Navbar() {
             }
           >
             About Us
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/careers"
+            className={(navData) =>
+              navData.isActive ? `${styles.active}` : ""
+            }
+          >
+            Careers
           </NavLink>
         </li>
         <li>
