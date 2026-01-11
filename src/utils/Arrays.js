@@ -34,7 +34,7 @@ import gallery_i7 from "../assets/gallery/image7.png";
 // import service1 from "../assets/service1.png";
 import gallery11 from "../assets/gallery11.png";
 // import service3 from "../assets/service3.png";
-// import service4 from "../assets/service4.png";
+import service4 from "../assets/service4.png";
 import service5 from "../assets/service5.png";
 import service6 from "../assets/service6.png";
 // import service7 from "../assets/service7.png";
@@ -47,8 +47,8 @@ import Barirah from "../assets/BARIRAH-TENON-PHOTO.png";
 import Coo from "../assets/COOTENON PIX1.png";
 import tenasammy from "../assets/TENASAMMYPASSPORT.jpg";
 import video1 from "../assets/videos/SHORT 003.mp4";
-import video2 from "../assets/videos/SHORT 004.mp4";
-import video3 from "../assets/videos/SHORT 006_1.mp4";
+// import video2 from "../assets/videos/SHORT 004.mp4";
+// import video3 from "../assets/videos/SHORT 006_1.mp4";
 
 export const Arrays = {
   gallery_images: [
@@ -69,12 +69,13 @@ export const Arrays = {
   ],
   service_images: [
     video1,
-    video2,
-    video3,
-    // service4,
-    // gallery12,
+    // video2,
     gallery101,
     gallery102,
+    // video3,
+    service4,
+    // gallery12,
+
     // gallery13,
     // gallery14,
     // service8,
