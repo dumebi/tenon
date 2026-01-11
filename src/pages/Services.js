@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../components/Layout/Navbar";
 import Footer from "../components/Layout/Footer";
 import Flickity from "flickity";
@@ -16,8 +16,40 @@ import rail from "../assets/rail-freight.png";
 import Card from "../components/UI/Card";
 import { Arrays } from "../utils/Arrays";
 
+// Helper function to check if a source is a video
+const isVideo = (src) => {
+  return typeof src === "string" && src.toLowerCase().endsWith(".mp4");
+};
+
 function Services() {
   const flickityRef = useRef(null);
+  const videoModalRef = useRef(null);
+  const [videoModal, setVideoModal] = useState({
+    isOpen: false,
+    videoSrc: null,
+  });
+
+  // Handle closing modal with escape key
+  useEffect(() => {
+    const handleEscape = (e) => {
+      if (e.key === "Escape" && videoModal.isOpen) {
+        closeVideoModal();
+      }
+    };
+    document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
+  }, [videoModal.isOpen]);
+
+  const openVideoModal = (videoSrc) => {
+    setVideoModal({ isOpen: true, videoSrc });
+  };
+
+  const closeVideoModal = () => {
+    if (videoModalRef.current) {
+      videoModalRef.current.pause();
+    }
+    setVideoModal({ isOpen: false, videoSrc: null });
+  };
 
   useEffect(() => {
     // Initialize Flickity when the component mounts
@@ -69,11 +101,37 @@ function Services() {
             </div>
             <div className={styles.carousel_container}>
               <div className="service_carousel">
-                {Arrays.service_images.map((image, index) => {
+                {Arrays.service_images.map((media, index) => {
+                  const isVideoFile = isVideo(media);
                   return (
                     <div key={index} className={styles.service_images}>
                       <div className={styles.service_images_wrapper}>
-                        <img src={image} alt="services" />
+                        {isVideoFile ? (
+                          <div
+                            className={styles.video_thumbnail_container}
+                            onClick={() => openVideoModal(media)}
+                          >
+                            <video
+                              src={media}
+                              className={styles.video_thumbnail}
+                              muted
+                              autoPlay
+                              loop
+                              playsInline
+                            />
+                            <div className={styles.play_icon_overlay}>
+                              <svg
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                className={styles.play_icon}
+                              >
+                                <path d="M8 5v14l11-7z" />
+                              </svg>
+                            </div>
+                          </div>
+                        ) : (
+                          <img src={media} alt="services" />
+                        )}
                       </div>
                     </div>
                   );
@@ -339,6 +397,39 @@ function Services() {
           </div>
         </div>
       </div>
+
+      {/* Video Modal */}
+      {videoModal.isOpen && (
+        <div className={styles.video_modal_overlay} onClick={closeVideoModal}>
+          <div
+            className={styles.video_modal_content}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className={styles.video_modal_close}
+              onClick={closeVideoModal}
+              aria-label="Close video"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="24"
+                height="24"
+              >
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+              </svg>
+            </button>
+            <video
+              ref={videoModalRef}
+              src={videoModal.videoSrc}
+              className={styles.video_modal_player}
+              controls
+              autoPlay
+            />
+          </div>
+        </div>
+      )}
+
       <Footer />
     </div>
   );
