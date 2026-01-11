@@ -47,7 +47,7 @@ import Barirah from "../assets/BARIRAH-TENON-PHOTO.png";
 import Coo from "../assets/COOTENON PIX1.png";
 import tenasammy from "../assets/TENASAMMYPASSPORT.jpg";
 import video1 from "../assets/videos/SHORT 003.mp4";
-// import video2 from "../assets/videos/SHORT 004.mp4";
+import video2 from "../assets/videos/SHORT 004.mp4";
 // import video3 from "../assets/videos/SHORT 006_1.mp4";
 
 export const Arrays = {
@@ -69,7 +69,6 @@ export const Arrays = {
   ],
   service_images: [
     video1,
-    // video2,
     gallery101,
     gallery102,
     // video3,
@@ -88,6 +87,7 @@ export const Arrays = {
     gallery6,
     gallery7,
     gallery9,
+    video2,
     // gallery,
   ],
   tenon_about: [
