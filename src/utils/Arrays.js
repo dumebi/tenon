@@ -48,6 +48,8 @@ import Coo from "../assets/COOTENON PIX1.png";
 import tenasammy from "../assets/TENASAMMYPASSPORT.jpg";
 import video1 from "../assets/videos/SHORT 003.mp4";
 import video2 from "../assets/videos/SHORT 004.mp4";
+import newGalleryImage from "../assets/newGallery1.png";
+import newGalleryImage2 from "../assets/newGallery2.png";
 // import video3 from "../assets/videos/SHORT 006_1.mp4";
 
 export const Arrays = {
@@ -66,6 +68,8 @@ export const Arrays = {
     image6,
     image7,
     gallery_i7,
+    newGalleryImage,
+    newGalleryImage2,
   ],
   service_images: [
     video1,
