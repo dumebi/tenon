@@ -74,6 +74,113 @@
     object-fit: cover;
 }
 
+/* Video thumbnail styles */
+.video_thumbnail_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 0.9375rem;
+    overflow: hidden;
+}
+
+.video_thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.9375rem;
+    pointer-events: none;
+}
+
+.play_icon_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.35);
+    transition: background 0.3s ease;
+}
+
+.video_thumbnail_container:hover .play_icon_overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.play_icon {
+    width: 80px;
+    height: 80px;
+    color: white;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.video_thumbnail_container:hover .play_icon {
+    transform: scale(1.1);
+}
+
+/* Video Modal styles */
+.video_modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.video_modal_content {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video_modal_close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    color: white;
+}
+
+.video_modal_close:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.1);
+}
+
+.video_modal_player {
+    width: 100%;
+    max-height: 80vh;
+    border-radius: 1rem;
+    outline: none;
+}
+
 .service_wrapper {
     display: flex;
     width: 100%;
@@ -388,5 +495,25 @@
 
     .freight_card p {
         font-size: 1rem;
+    }
+
+    /* Video responsive styles */
+    .play_icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .video_modal_content {
+        width: 95%;
+    }
+
+    .video_modal_close {
+        top: -45px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .video_modal_player {
+        max-height: 70vh;
     }
 }

@@ -10,7 +10,7 @@ import company4 from "../../assets/image 4.png";
 import company5 from "../../assets/image 5.png";
 import company6 from "../../assets/image 6.png";
 import company7 from "../../assets/partners/image 8.png";
-import company8 from "../../assets/7up-logo-large.png";
+import company8 from "../../assets/sbclogo.png";
 
 function Hero() {
   const phrases = useMemo(
@@ -21,7 +21,7 @@ function Hero() {
       "Haulage",
       "Warehousing",
     ],
-    []
+    [],
   );
   const [currentPhrase, setCurrentPhrase] = useState(phrases[0]);
   const [phraseIndex, setPhraseIndex] = useState(0);

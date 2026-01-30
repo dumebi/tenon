@@ -77,7 +77,7 @@ function About() {
                 <div className={styles.team_info}>
                   <h1>{data.name}</h1>
                   <p>{data.position}</p>
-                  <p>{data.bio}</p>
+                  <p dangerouslySetInnerHTML={{ __html: data.bio }} />
                 </div>
               </Card>
             ))}
